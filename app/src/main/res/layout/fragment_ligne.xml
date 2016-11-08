@@ -7,51 +7,8 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-    <Button
-        android:text="Ligne 1"
+    <ListView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/ligne1Button" />
-
-    <Button
-        android:text="Ligne 2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/ligne2Button" />
-
-    <Button
-        android:text="Ligne 3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/ligne3Button" />
-
-    <Button
-        android:text="Ligne 4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/ligne4Button" />
-
-    <Button
-        android:text="Ligne 5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/ligne5Button" />
-
-    <Button
-        android:text="Ligne 6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/ligne6Button" />
-
-    <Button
-        android:text="Ligne 7"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/ligne7Button" />
-
-    <Button
-        android:text="Ligne 21"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/ligne21Button" />
+        android:layout_height="match_parent"
+        android:id="@+id/listLigne" />
 </LinearLayout>

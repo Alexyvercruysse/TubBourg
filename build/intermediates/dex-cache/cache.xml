@@ -34,7 +34,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="ce4f845e64c416762844ec394e566bda5d5bf603">
+        sha1="b578ff65226a24efbc96af41bd1889938b9ebc59">
         <dex dex="C:\Git\TubTabBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_caa42cd8126a0550be02305d7b6973dbb7bec777\classes.dex" />
     </item>
     <item
@@ -187,7 +187,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="c5944a709552d8cf9c00490fafe67b399e0c90e6">
+        sha1="6964c400c086dba463082bbb02df32c771195982">
         <dex dex="C:\Git\TubTabBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_0257a6f2866f666b93c80b9fa8efd5429253ae53\classes.dex" />
     </item>
     <item

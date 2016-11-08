@@ -8,12 +8,19 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class LigneFragment extends Fragment {
 
     private View retVal = null;
     private Button ligne1,ligne2,ligne3,ligne4,ligne5,ligne6,ligne7,ligne21;
+    private ListView listLigne;
     public LigneFragment() {
         // Required empty public constructor
     }
@@ -35,34 +42,28 @@ public class LigneFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         retVal = inflater.inflate(R.layout.fragment_ligne, container, false);
-        ligne1 = (Button) retVal.findViewById(R.id.ligne1Button);
-        ligne2 = (Button) retVal.findViewById(R.id.ligne2Button);
-        ligne3 = (Button) retVal.findViewById(R.id.ligne3Button);
-        ligne4 = (Button) retVal.findViewById(R.id.ligne4Button);
-        ligne5 = (Button) retVal.findViewById(R.id.ligne5Button);
-        ligne6 = (Button) retVal.findViewById(R.id.ligne6Button);
-        ligne7 = (Button) retVal.findViewById(R.id.ligne7Button);
-        ligne21 = (Button) retVal.findViewById(R.id.ligne21Button);
-        showLigneHorraire(ligne1,1);
-        showLigneHorraire(ligne2,2);
-        showLigneHorraire(ligne3,3);
-        showLigneHorraire(ligne4,4);
-        showLigneHorraire(ligne5,5);
-        showLigneHorraire(ligne6,6);
-        showLigneHorraire(ligne7,7);
-        showLigneHorraire(ligne21,0);
+        listLigne = (ListView) retVal.findViewById(R.id.listLigne);
+        List<String> ListDeString = new ArrayList<String>(){{add("Ligne 1");add("Ligne 2");add("Ligne 3");add("Ligne 4");add("Ligne 5");add("Ligne 6");add("Ligne 7");add("Ligne 21");}};
+        ArrayAdapter arrayAdapter = new ArrayAdapter(getActivity(),android.R.layout.simple_list_item_1, ListDeString );
+        listLigne.setAdapter(arrayAdapter);
+        listLigne.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                if (i == 7){
+                    showLigneHorraire(0);
+                }
+                else {
+                    showLigneHorraire(i+1);
+                }
+            }
+        });
         return retVal;
     }
 
-    private void showLigneHorraire(Button button, final int numLigne){
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+    private void showLigneHorraire(final int numLigne){
                 Intent intent = new Intent(getActivity(),LigneMap.class);
                 intent.putExtra("numLigne",numLigne);
                 startActivity(intent);
-            }
-        });
     }
 
 
