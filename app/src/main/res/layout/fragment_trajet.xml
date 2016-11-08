@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alexy.tubtabbar.TrajetFragment"
+    android:orientation="vertical">
+
+    <Button
+        android:text="Heure d'arrivé"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button4" />
+
+    <Button
+        android:text="Lieu de départ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button5"
+        android:layout_below="@+id/button4" />
+
+    <Button
+        android:text="Lieu d'arrivé"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button5"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button6" />
+
+    <Button
+        android:text="GO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button6"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button7" />
+
+</LinearLayout>
