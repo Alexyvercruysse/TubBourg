@@ -95,6 +95,21 @@ public class LigneMap extends AppCompatActivity {
                     map.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
                         @Override
                         public boolean onMarkerClick(Marker marker) {
+//                                    Intent intent = new Intent(getApplication(),stopHours.class);
+//                                    intent.putExtra("nomArret",marker.getTitle());
+//                                    intent.putExtra("idLine",numLine);
+//                                    intent.putExtra("idStop",stopRepository.getStopByName(marker.getTitle()));
+//                                    intent.putExtra("dernierStop",stops.get(0).getName());
+//                                    intent.putExtra("premierStop",stops.get(stops.size()-1).getName());
+//                                    startActivity(intent);
+
+
+                            return false;
+                        }
+                    });
+                    map.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
+                        @Override
+                        public void onInfoWindowClick(Marker marker) {
                                     Intent intent = new Intent(getApplication(),stopHours.class);
                                     intent.putExtra("nomArret",marker.getTitle());
                                     intent.putExtra("idLine",numLine);
@@ -102,11 +117,9 @@ public class LigneMap extends AppCompatActivity {
                                     intent.putExtra("dernierStop",stops.get(0).getName());
                                     intent.putExtra("premierStop",stops.get(stops.size()-1).getName());
                                     startActivity(intent);
-
-
-                            return false;
                         }
                     });
+
                     map.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(46.207337, 5.227646), 13));
 
                 } catch (XmlPullParserException e) {

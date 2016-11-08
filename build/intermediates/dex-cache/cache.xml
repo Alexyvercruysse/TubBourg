@@ -34,7 +34,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="8955348d3c63f5efaea5ef4e04b91fd0fdfade4d">
+        sha1="ce4f845e64c416762844ec394e566bda5d5bf603">
         <dex dex="C:\Git\TubTabBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_caa42cd8126a0550be02305d7b6973dbb7bec777\classes.dex" />
     </item>
     <item
@@ -147,21 +147,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Git\TubTabBar\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
-        <dex dex="C:\Git\TubTabBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.0.0_8f8ddfc936cd52ebe464011af55677ffe898474c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Git\TubTabBar\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
         <dex dex="C:\Git\TubTabBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.0.0_bc28b80340adb4c411d4abbc645a34ea77756fc8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Git\TubTabBar\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="C:\Git\TubTabBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.0.0_8f8ddfc936cd52ebe464011af55677ffe898474c\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -187,7 +187,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="ec21fa9f5b959f3402dc5b41fe5c9fda19551e7a">
+        sha1="c5944a709552d8cf9c00490fafe67b399e0c90e6">
         <dex dex="C:\Git\TubTabBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_0257a6f2866f666b93c80b9fa8efd5429253ae53\classes.dex" />
     </item>
     <item
