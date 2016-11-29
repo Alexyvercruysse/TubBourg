@@ -20,11 +20,14 @@ import java.util.List;
 
 public class Utilities {
 
+
+
+        // Ajout d'un stop en marker sur la map
     public static MarkerOptions addStopToMarker(Stop stop){
         return new MarkerOptions().title(stop.getName()).position(stop.getGpsCoord()).icon(BitmapDescriptorFactory.fromResource(R.drawable.busmarker));
     }
 
-        // Ajout d'un marker sur map rempli par un stop
+        // Ajout des stops en marker sur la map
     public static List<MarkerOptions> addStopToMarker(List<Stop> stops){
         List<MarkerOptions> markers = new ArrayList<>();
         for (Stop stop:stops){
@@ -35,6 +38,7 @@ public class Utilities {
 
 
         // Récupération de l'horraire le plus proche
+    // FIXME : HARDCODING
     public static String getNextPassageFromNow(List<String> lesHeures){
         List<Integer> lesHEnInt = new ArrayList<Integer>();
 

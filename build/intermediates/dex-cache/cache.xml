@@ -250,7 +250,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="45e148960b08ede64ee3ae7a5c6708f06f42ad51">
+        sha1="da992c68929a569845c8e6d2f68c4c8516933cf8">
         <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_c6265151409f358591384f4380adb673fca7e6a0/classes.dex" />
     </item>
     <item
