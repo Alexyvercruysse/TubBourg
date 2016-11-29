@@ -1,22 +1,17 @@
-package com.example.alexy.tubtabbar.Repository;
+package com.example.alexy.tubtabbar.Repositories;
 
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.util.Log;
 
 import com.example.alexy.tubtabbar.Entities.Hour;
 import com.example.alexy.tubtabbar.Entities.Stop;
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.type.ArrayType;
 
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 /**

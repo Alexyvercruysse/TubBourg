@@ -1,10 +1,11 @@
-package com.example.alexy.tubtabbar;
+package com.example.alexy.tubtabbar.Utils;
 
 import android.graphics.BitmapFactory;
 import android.util.Log;
 
 import com.example.alexy.tubtabbar.Entities.Line;
 import com.example.alexy.tubtabbar.Entities.Stop;
+import com.example.alexy.tubtabbar.R;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;

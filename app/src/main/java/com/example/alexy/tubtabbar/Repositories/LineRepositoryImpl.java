@@ -1,4 +1,4 @@
-package com.example.alexy.tubtabbar.Repository;
+package com.example.alexy.tubtabbar.Repositories;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -6,17 +6,6 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.example.alexy.tubtabbar.Entities.Line;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by iem on 19/10/2016.

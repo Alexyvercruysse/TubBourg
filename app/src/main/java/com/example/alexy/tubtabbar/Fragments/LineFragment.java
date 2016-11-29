@@ -1,4 +1,4 @@
-package com.example.alexy.tubtabbar;
+package com.example.alexy.tubtabbar.Fragments;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,6 +10,9 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import com.example.alexy.tubtabbar.Activities.LineMap;
+import com.example.alexy.tubtabbar.R;
 
 import java.util.ArrayList;
 import java.util.List;

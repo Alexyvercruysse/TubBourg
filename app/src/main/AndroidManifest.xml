@@ -19,7 +19,7 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".MainActivity"
+            android:name=".Activities.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -28,9 +28,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".selectStops" />
-        <activity android:name=".LineMap" />
-        <activity android:name=".stopHours"></activity>
+        <activity android:name=".Activities.selectStops" />
+        <activity android:name=".Activities.LineMap" />
+        <activity android:name=".Activities.stopHours"></activity>
     </application>
 
 </manifest>

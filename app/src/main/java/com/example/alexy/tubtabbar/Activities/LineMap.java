@@ -1,4 +1,4 @@
-package com.example.alexy.tubtabbar;
+package com.example.alexy.tubtabbar.Activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,8 +6,10 @@ import android.os.Bundle;
 
 
 import com.example.alexy.tubtabbar.Entities.Stop;
-import com.example.alexy.tubtabbar.Repository.HourRepositoryImpl;
-import com.example.alexy.tubtabbar.Repository.StopRepositoryImpl;
+import com.example.alexy.tubtabbar.R;
+import com.example.alexy.tubtabbar.Repositories.HourRepositoryImpl;
+import com.example.alexy.tubtabbar.Repositories.StopRepositoryImpl;
+import com.example.alexy.tubtabbar.Utils.Utilities;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;

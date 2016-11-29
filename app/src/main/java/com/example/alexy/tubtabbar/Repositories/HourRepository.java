@@ -1,13 +1,9 @@
-package com.example.alexy.tubtabbar.Repository;
-import android.content.ContentValues;
+package com.example.alexy.tubtabbar.Repositories;
 import android.content.Context;
 import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 
 
 import com.example.alexy.tubtabbar.Entities.Hour;
-
-import java.util.Date;
 
 /**
  * Created by iem on 19/10/2016.

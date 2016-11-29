@@ -1,4 +1,4 @@
-package com.example.alexy.tubtabbar.Repository;
+package com.example.alexy.tubtabbar.Repositories;
 
 /**
  * Created by iem on 18/10/2016.
@@ -8,7 +8,6 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.util.Log;
 import android.widget.Toast;
 
 import java.io.File;

@@ -1,4 +1,4 @@
-package com.example.alexy.tubtabbar;
+package com.example.alexy.tubtabbar.Fragments;
 
 import android.app.TimePickerDialog;
 import android.content.Context;
@@ -10,6 +10,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TimePicker;
+
+import com.example.alexy.tubtabbar.Activities.selectStops;
+import com.example.alexy.tubtabbar.R;
 
 import java.util.Date;
 

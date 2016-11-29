@@ -1,16 +1,16 @@
-package com.example.alexy.tubtabbar;
+package com.example.alexy.tubtabbar.Activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.example.alexy.tubtabbar.Repository.HourRepositoryImpl;
+import com.example.alexy.tubtabbar.R;
+import com.example.alexy.tubtabbar.Repositories.HourRepositoryImpl;
+import com.example.alexy.tubtabbar.Utils.Utilities;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 public class stopHours extends AppCompatActivity {
@@ -36,14 +36,17 @@ public class stopHours extends AppCompatActivity {
         // Récupération des horraires en fonction de la ligne, +1 pour le sens inverse
         List<String> horraireAllez = hourRepository.getHoursByidLineAndidStop(this,getIntent().getIntExtra("idLine",999),getIntent().getIntExtra("idStop",999));
         List<String> horraireRetour = hourRepository.getHoursByidLineAndidStop(this,getIntent().getIntExtra("idLine",999)+1,getIntent().getIntExtra("idStop",999));
-        tvDirection1.setText("Direction : "+getIntent().getStringExtra("premierStop")+"\nProchain horraire : "+Utilities.getNextPassageFromNow(horraireAllez)+"\n");
-        tvDirection2.setText("Direction : "+getIntent().getStringExtra("dernierStop")+"\nProchain horraire : "+Utilities.getNextPassageFromNow(horraireRetour)+"\n");
+        tvDirection1.setText("Direction : "+getIntent().getStringExtra("premierStop")+"\nProchain passage : "+ Utilities.getNextPassageFromNow(horraireAllez)+"\n");
+        tvDirection2.setText("Direction : "+getIntent().getStringExtra("dernierStop")+"\nProchain passage : "+Utilities.getNextPassageFromNow(horraireRetour)+"\n");
         tvArret.setText("Arrêt : "+getIntent().getStringExtra("nomArret"));
 
 
+        // Création des arrayAdapter, par défaut "pas de résultat"
         ArrayAdapter arrayAdapter = new ArrayAdapter(this,android.R.layout.simple_list_item_1, new ArrayList<String>(){{add("Pas de résultat");}} );
         ArrayAdapter arrayAdapter2 = new ArrayAdapter(this,android.R.layout.simple_list_item_1, new ArrayList<String>(){{add("Pas de résultat");}} );
+
         if (!horraireAllez.isEmpty()){
+            // Remplir arrayAdapter avec la liste d'horraire
             arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, horraireAllez);
         }
         if (!horraireRetour.isEmpty()) {

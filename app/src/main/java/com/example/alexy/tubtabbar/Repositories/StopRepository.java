@@ -1,6 +1,4 @@
-package com.example.alexy.tubtabbar.Repository;
-
-import android.database.Cursor;
+package com.example.alexy.tubtabbar.Repositories;
 
 import com.example.alexy.tubtabbar.Entities.Stop;
 

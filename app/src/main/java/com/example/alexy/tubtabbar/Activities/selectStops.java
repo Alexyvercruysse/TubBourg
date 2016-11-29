@@ -1,4 +1,4 @@
-package com.example.alexy.tubtabbar;
+package com.example.alexy.tubtabbar.Activities;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,18 +8,15 @@ import android.widget.Toast;
 
 import com.example.alexy.tubtabbar.Entities.Line;
 import com.example.alexy.tubtabbar.Entities.Stop;
+import com.example.alexy.tubtabbar.R;
+import com.example.alexy.tubtabbar.Utils.Utilities;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
-import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.maps.android.kml.KmlLayer;
 
-import org.xmlpull.v1.XmlPullParserException;
-
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
