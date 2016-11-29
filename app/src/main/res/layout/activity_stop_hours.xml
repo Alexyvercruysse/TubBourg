@@ -17,8 +17,10 @@
         android:layout_height="match_parent"
         android:id="@+id/tvArret"
         android:layout_weight="1"
-        android:textAlignment="center"
-        tools:text="Arrêt :" />
+        tools:text="Arrêt :"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:gravity="center"
+        android:textSize="18sp" />
 
     <LinearLayout
         android:orientation="horizontal"

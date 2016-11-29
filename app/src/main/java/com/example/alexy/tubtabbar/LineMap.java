@@ -32,7 +32,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class LigneMap extends AppCompatActivity {
+public class LineMap extends AppCompatActivity {
     MapView mapView;
     KmlLayer layer = null;
 
@@ -40,19 +40,27 @@ public class LigneMap extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ligne_map);
-        final int numLine = getIntent().getIntExtra("numLigne",999);
+        final int numLine = getIntent().getIntExtra("numLigne",999); // Si pas de valeurs set a 999 pour return null
+
+        // Connection au repo pour récupérer les Arrêts
         final StopRepositoryImpl stopRepository = new StopRepositoryImpl(this);
         stopRepository.open();
+
+        // Connection au repo pour récupérer les Horraires
         HourRepositoryImpl hourRepository = new HourRepositoryImpl(this);
         hourRepository.open();
-        final List<Stop> stops = hourRepository.getStopsByLine(this,getIntent().getIntExtra("numLigne",999));
-        final int numberStops = stops.size();
+
+
+        final List<Stop> stops = hourRepository.getStopsByLine(this,getIntent().getIntExtra("numLigne",999)); // Si pas de valeurs set a 999 pour return null
+
+        // Création de la mapView
         mapView = (MapView) findViewById(R.id.mapView);
         mapView.onCreate(savedInstanceState);
         mapView.getMapAsync(new OnMapReadyCallback() {
             @Override
             public void onMapReady(GoogleMap map) {
                 try {
+                    // Ajout du kml sur la map
                     switch (numLine){
                         case 1:
                             layer = new KmlLayer(map, R.raw.ligne1, getApplicationContext());
@@ -92,21 +100,8 @@ public class LigneMap extends AppCompatActivity {
 
                             break;
                     }
-                    map.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
-                        @Override
-                        public boolean onMarkerClick(Marker marker) {
-//                                    Intent intent = new Intent(getApplication(),stopHours.class);
-//                                    intent.putExtra("nomArret",marker.getTitle());
-//                                    intent.putExtra("idLine",numLine);
-//                                    intent.putExtra("idStop",stopRepository.getStopByName(marker.getTitle()));
-//                                    intent.putExtra("dernierStop",stops.get(0).getName());
-//                                    intent.putExtra("premierStop",stops.get(stops.size()-1).getName());
-//                                    startActivity(intent);
 
-
-                            return false;
-                        }
-                    });
+                    // Ajout du click sur le nom de l'arrêt
                     map.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
                         @Override
                         public void onInfoWindowClick(Marker marker) {

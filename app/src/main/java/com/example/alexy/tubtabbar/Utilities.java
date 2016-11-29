@@ -37,7 +37,7 @@ public class Utilities {
         int minute = new Date().getMinutes();
         int leheure = hour*1000+minute;
         int lheureareturn = 0;
-        String result = "";
+        String result = "Pas d'horraire";
         for (String lheure : lesHeures){
             lesHEnInt.add(Integer.parseInt(lheure.substring(0,2))*1000+Integer.parseInt(lheure.substring(3,5)));
         }
@@ -58,7 +58,7 @@ public class Utilities {
             }
 
         }
-        return null;
+        return result;
     }
 
 

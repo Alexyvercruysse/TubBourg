@@ -3,7 +3,6 @@ package com.example.alexy.tubtabbar;
 import android.app.TimePickerDialog;
 import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -11,26 +10,25 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TimePicker;
-import android.widget.Toast;
 
 import java.util.Date;
 
 import static android.app.Activity.RESULT_OK;
 
 
-public class TrajetFragment extends Fragment {
+public class TravelFragment extends Fragment {
     static final int STOP_REQUEST = 0;
     static final int STOP_REQUEST_END = 1;
     Button btn5,btn6,btn4;
     private View retVal = null;
 
-    public TrajetFragment() {
+    public TravelFragment() {
         // Required empty public constructor
     }
 
-    public static TrajetFragment newInstance(){
-        TrajetFragment trajetFragment = new TrajetFragment();
-        return trajetFragment;
+    public static TravelFragment newInstance(){
+        TravelFragment travelFragment = new TravelFragment();
+        return travelFragment;
     }
 
 

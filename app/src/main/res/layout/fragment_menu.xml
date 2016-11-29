@@ -1,5 +1,6 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.alexy.tubtabbar.MenuFragment">
@@ -8,6 +9,9 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Menu" />
+        android:text="Bienvenue sur l'application TubTabBar de Mazet Vincent et Alexy Vercruysse. \n\n Ceci est une version beta."
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:gravity="center"
+        android:padding="16dp" />
 
-</FrameLayout>
+</LinearLayout>

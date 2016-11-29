@@ -32,8 +32,8 @@ public class stopHours extends AppCompatActivity {
         hourRepository.open();
         List<String> horraireAllez = hourRepository.getHoursByidLineAndidStop(this,getIntent().getIntExtra("idLine",999),getIntent().getIntExtra("idStop",999));
         List<String> horraireRetour = hourRepository.getHoursByidLineAndidStop(this,getIntent().getIntExtra("idLine",999)+1,getIntent().getIntExtra("idStop",999));
-        tvDirection1.setText("Direction : "+getIntent().getStringExtra("premierStop")+"\nProchain horraire : "+Utilities.getNextPassageFromNow(horraireAllez));
-        tvDirection2.setText("Direction : "+getIntent().getStringExtra("dernierStop")+"\nProchain horraire : "+Utilities.getNextPassageFromNow(horraireRetour));
+        tvDirection1.setText("Direction : "+getIntent().getStringExtra("premierStop")+"\nProchain horraire : "+Utilities.getNextPassageFromNow(horraireAllez)+"\n");
+        tvDirection2.setText("Direction : "+getIntent().getStringExtra("dernierStop")+"\nProchain horraire : "+Utilities.getNextPassageFromNow(horraireRetour)+"\n");
         tvArret.setText("Arrêt : "+getIntent().getStringExtra("nomArret"));
         Log.d("tag",""+Utilities.getNextPassageFromNow(horraireAllez));
         ArrayAdapter arrayAdapter = new ArrayAdapter(this,android.R.layout.simple_list_item_1, new ArrayList<String>(){{add("Pas de résultat");}} );
