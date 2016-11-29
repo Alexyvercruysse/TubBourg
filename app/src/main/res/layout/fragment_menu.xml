@@ -9,9 +9,10 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Bienvenue sur l'application TubTabBar de Mazet Vincent et Alexy Vercruysse. \n\n Ceci est une version beta."
+        android:text="Bienvenue sur l'application TubTabBar de Mazet Vincent et Vercruysse Alexy. \n\n Ceci est une version beta."
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:gravity="center"
-        android:padding="16dp" />
+        android:padding="16dp"
+        android:id="@+id/textView2" />
 
 </LinearLayout>

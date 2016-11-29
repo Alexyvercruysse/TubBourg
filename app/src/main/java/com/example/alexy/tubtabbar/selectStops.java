@@ -37,6 +37,7 @@ public class selectStops extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_stops);
+        // Création d'un jeu d'essai en brut
         gare = new Stop();
         vicaire = new Stop();
         chariteUniversitaire = new Stop();
@@ -55,11 +56,11 @@ public class selectStops extends AppCompatActivity {
         mapView = (MapView) findViewById(R.id.mapView2);
         mapView.onCreate(savedInstanceState);
 
-        // Gets to GoogleMap from the MapView and does initialization stuff
 
         mapView.getMapAsync(new OnMapReadyCallback() {
             @Override
             public void onMapReady(GoogleMap map) {
+
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(gare.getGpsCoord(), 13));
                 map.addMarker(Utilities.addStopToMarker(vicaire));
                 map.addMarker(Utilities.addStopToMarker(gare));

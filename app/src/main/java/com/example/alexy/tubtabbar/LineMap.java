@@ -1,20 +1,12 @@
 package com.example.alexy.tubtabbar;
 
-import android.app.Dialog;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.database.Cursor;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.widget.Toast;
 
 
-import com.example.alexy.tubtabbar.Entities.Line;
 import com.example.alexy.tubtabbar.Entities.Stop;
 import com.example.alexy.tubtabbar.Repository.HourRepositoryImpl;
-import com.example.alexy.tubtabbar.Repository.StopRepository;
 import com.example.alexy.tubtabbar.Repository.StopRepositoryImpl;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -28,8 +20,6 @@ import com.google.maps.android.kml.KmlLayer;
 import org.xmlpull.v1.XmlPullParserException;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 public class LineMap extends AppCompatActivity {
@@ -39,7 +29,7 @@ public class LineMap extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ligne_map);
+        setContentView(R.layout.activity_line_map);
         final int numLine = getIntent().getIntExtra("numLigne",999); // Si pas de valeurs set a 999 pour return null
 
         // Connection au repo pour récupérer les Arrêts
@@ -105,6 +95,8 @@ public class LineMap extends AppCompatActivity {
                     map.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
                         @Override
                         public void onInfoWindowClick(Marker marker) {
+
+                            //Envoie sur l'activité des horraires avec toutes les informations
                                     Intent intent = new Intent(getApplication(),stopHours.class);
                                     intent.putExtra("nomArret",marker.getTitle());
                                     intent.putExtra("idLine",numLine);
@@ -115,6 +107,7 @@ public class LineMap extends AppCompatActivity {
                         }
                     });
 
+                    // Mouvement de la caméra sur Bourg
                     map.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(46.207337, 5.227646), 13));
 
                 } catch (XmlPullParserException e) {
@@ -122,13 +115,6 @@ public class LineMap extends AppCompatActivity {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-//                LatLng sydney = new LatLng(-33.867, 151.206);
-//                map.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 13));
-//
-//                map.addMarker(new MarkerOptions()
-//                        .title("Sydney")
-//                        .snippet("The most populous city in Australia.")
-//                        .position(sydney));
 
             }
         });

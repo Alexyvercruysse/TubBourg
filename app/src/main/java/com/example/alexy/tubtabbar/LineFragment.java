@@ -35,7 +35,7 @@ public class LineFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        retVal = inflater.inflate(R.layout.fragment_ligne, container, false);
+        retVal = inflater.inflate(R.layout.fragment_line, container, false);
         listLigne = (ListView) retVal.findViewById(R.id.listLigne);
         // Création de la liste des lignes
         List<String> ListDeString = new ArrayList<String>(){{add("Ligne 1");add("Ligne 2");add("Ligne 3");add("Ligne 4");add("Ligne 5");add("Ligne 6");add("Ligne 7");add("Ligne 21");}};

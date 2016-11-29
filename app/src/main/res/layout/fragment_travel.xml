@@ -22,7 +22,7 @@
         android:layout_below="@+id/button4" />
 
     <Button
-        android:text="Lieu d'arrivé"
+        android:text="Lieu d'arrivée"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/button5"

@@ -23,6 +23,7 @@ public class Utilities {
         return new MarkerOptions().title(stop.getName()).position(stop.getGpsCoord()).icon(BitmapDescriptorFactory.fromResource(R.drawable.busmarker));
     }
 
+        // Ajout d'un marker sur map rempli par un stop
     public static List<MarkerOptions> addStopToMarker(List<Stop> stops){
         List<MarkerOptions> markers = new ArrayList<>();
         for (Stop stop:stops){
@@ -31,28 +32,33 @@ public class Utilities {
         return markers;
     }
 
+
+        // Récupération de l'horraire le plus proche
     public static String getNextPassageFromNow(List<String> lesHeures){
         List<Integer> lesHEnInt = new ArrayList<Integer>();
+
+        // FIXME Use non-depreciated func
         int hour = new Date().getHours();
         int minute = new Date().getMinutes();
-        int leheure = hour*1000+minute;
-        int lheureareturn = 0;
+
+        int ahour = hour*1000+minute;
+        int hourToReturn = 0;
         String result = "Pas d'horraire";
         for (String lheure : lesHeures){
             lesHEnInt.add(Integer.parseInt(lheure.substring(0,2))*1000+Integer.parseInt(lheure.substring(3,5)));
         }
         for (int chooseHour : lesHEnInt){
-            Log.d("Tag","ChooseHour "+chooseHour+" leheure "+leheure);
-            if (leheure < chooseHour){
-                    lheureareturn = chooseHour;
-                if (lheureareturn == 0){
-                    lheureareturn = lesHEnInt.get(0);
+            Log.d("Tag","ChooseHour "+chooseHour+" leheure "+ahour);
+            if (ahour < chooseHour){
+                    hourToReturn = chooseHour;
+                if (hourToReturn == 0){
+                    hourToReturn = lesHEnInt.get(0);
                 }
-                if (lheureareturn < 10000){
-                    result = lheureareturn/1000+":"+lheureareturn%1000;
+                if (hourToReturn < 10000){
+                    result = hourToReturn/1000+":"+hourToReturn%1000;
                 }
                 else {
-                    result = lheureareturn/1000+":"+lheureareturn%1000;
+                    result = hourToReturn/1000+":"+hourToReturn%1000;
                 }
                 return result;
             }

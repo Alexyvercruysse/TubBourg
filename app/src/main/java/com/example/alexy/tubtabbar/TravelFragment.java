@@ -19,11 +19,10 @@ import static android.app.Activity.RESULT_OK;
 public class TravelFragment extends Fragment {
     static final int STOP_REQUEST = 0;
     static final int STOP_REQUEST_END = 1;
-    Button btn5,btn6,btn4;
+    Button buttonStart, buttonEnd, buttonSelectHour;
     private View retVal = null;
 
     public TravelFragment() {
-        // Required empty public constructor
     }
 
     public static TravelFragment newInstance(){
@@ -40,34 +39,40 @@ public class TravelFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        retVal = inflater.inflate( R.layout.fragment_trajet, container, false );
+        retVal = inflater.inflate( R.layout.fragment_travel, container, false );
 
-        btn5 = (Button) retVal.findViewById(R.id.button5);
-        btn6 = (Button) retVal.findViewById(R.id.button6);
-        btn4 = (Button) retVal.findViewById(R.id.button4);
-        btn4.setOnClickListener(new View.OnClickListener() {
+        buttonStart = (Button) retVal.findViewById(R.id.button5); // Lieu de départ
+        buttonEnd = (Button) retVal.findViewById(R.id.button6);
+        buttonSelectHour = (Button) retVal.findViewById(R.id.button4);
+
+        // FIXME : Use non-depreciated func
+        buttonSelectHour.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //Affiche dialog timePicker
                 TimePickerDialog timePickerDialog = new TimePickerDialog(getContext(), new TimePickerDialog.OnTimeSetListener() {
                     @Override
                     public void onTimeSet(TimePicker timePicker, int i, int i1) {
-                        btn4.setText("Arrivé a : "+i+"H et "+i1+"Min");
+                        buttonSelectHour.setText("Arrivé a : "+i+"H et "+i1+"Min");
                     }
-                },new Date().getHours(),new Date().getMinutes(),true);
+                }, new Date().getHours(),new Date().getMinutes(),true);
                 timePickerDialog.show();
             }
         });
-        btn5.setOnClickListener(new View.OnClickListener() {
+        buttonStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                // Lancer l'activité pour selectionner l'arrêt de départ
                 Intent myIntent = new Intent(getActivity(), selectStops.class);
                 startActivityForResult(myIntent, STOP_REQUEST);
             }
         });
-        btn6.setOnClickListener(new View.OnClickListener() {
+        buttonEnd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                // Lancer l'activité pour selectionner l'arrêt d'arrivée
                 Intent myIntent = new Intent(getActivity(), selectStops.class);
                 myIntent.putExtra("EndStops",true);
                 startActivityForResult(myIntent, STOP_REQUEST_END);
@@ -94,11 +99,11 @@ public class TravelFragment extends Fragment {
     {
         if (requestCode == STOP_REQUEST && resultCode == RESULT_OK)
         {
-            btn5.setText("Départ : "+data.getStringExtra("result"));
+            buttonStart.setText("Départ : "+data.getStringExtra("result"));
         }
         if (requestCode == STOP_REQUEST_END && resultCode == RESULT_OK)
         {
-            btn6.setText("Arrivé : "+data.getStringExtra("result"));
+            buttonEnd.setText("Arrivé : "+data.getStringExtra("result"));
         }
     }
 
