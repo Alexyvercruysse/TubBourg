@@ -19,7 +19,6 @@ import java.util.List;
 public class LigneFragment extends Fragment {
 
     private View retVal = null;
-    private Button ligne1,ligne2,ligne3,ligne4,ligne5,ligne6,ligne7,ligne21;
     private ListView listLigne;
     public LigneFragment() {
         // Required empty public constructor

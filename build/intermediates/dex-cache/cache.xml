@@ -3,255 +3,255 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\Alexy\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.7.3\1499b854ae9f370409792db5af1b552dc7d9682f\jackson-core-2.7.3.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="1499b854ae9f370409792db5af1b552dc7d9682f">
-        <dex dex="C:\Git\TubTabBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\jackson-core-2.7.3_90fe491bf2d7d7d4a92156862df86246fba9d243\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Git\TubTabBar\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
-        <dex dex="C:\Git\TubTabBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.0.0_ef1c95f13b0a04aae4d6589d73941fe2f4738ffa\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Git\TubTabBar\app\build\intermediates\exploded-aar\com.android.support\design\25.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="26384be22ddc74cfe197ebda9edbc7d1fd8bd537">
-        <dex dex="C:\Git\TubTabBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-25.0.0_b74d8742a3ac75d325715b6c81a4c438ad43aad2\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Git\TubTabBar\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="b578ff65226a24efbc96af41bd1889938b9ebc59">
-        <dex dex="C:\Git\TubTabBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_caa42cd8126a0550be02305d7b6973dbb7bec777\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Git\TubTabBar\app\build\intermediates\exploded-aar\com.android.support\transition\25.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="0c6d948e6cb9ea6f535d175fb61ba2930719c0e9">
-        <dex dex="C:\Git\TubTabBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-transition-25.0.0_ac5938e254ae4641abc10f3eb20aecdb45213810\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Git\TubTabBar\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
-        <dex dex="C:\Git\TubTabBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.0.0_7e107a288bd3fbbe5b5ec0dec0e9ef447cd649ae\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Git\TubTabBar\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
-        <dex dex="C:\Git\TubTabBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.0.0_7dd7a6e177220b28ab4a0bd31b8360d94acf3bad\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Git\TubTabBar\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\libs\internal_impl-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
-        <dex dex="C:\Git\TubTabBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_6d0f313960e1553d2e27858a88bf58665dc12b9d\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Git\TubTabBar\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
-        <dex dex="C:\Git\TubTabBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.0.0_5c5b0f07916fda6184d6dec9b44e72e58ee7b920\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Git\TubTabBar\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="26674000177e45447a0326a6ad84612761199a13">
-        <dex dex="C:\Git\TubTabBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.0.0_e128dabf3414933b9f580fc3837387f929a4327d\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Git\TubTabBar\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\libs\internal_impl-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
-        <dex dex="C:\Git\TubTabBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_33c605e9a43c99903ddf695c178349214280af91\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Git\TubTabBar\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="5e497d60f0cb6ce87c458ac5420a46d0fed49bd0">
-        <dex dex="C:\Git\TubTabBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-25.0.0_eb2cf924ff72eb26f4da675968df790ebae44305\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Git\TubTabBar\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
-        <dex dex="C:\Git\TubTabBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.0.0_7c1877d00314284d590c1a0ac3f7233d479bdf8c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Git\TubTabBar\app\build\intermediates\exploded-aar\com.google.maps.android\android-maps-utils\0.4.4\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="6f57b76211a1d7b0c1f18873af59faad95664681">
-        <dex dex="C:\Git\TubTabBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.maps.android-android-maps-utils-0.4.4_da9cee211d159d8f6eeac8691041d73cae44c8ab\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Git\TubTabBar\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.6.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="eccaaa9ffa6bb4bfbd2e870f01aaf69655d353be">
-        <dex dex="C:\Git\TubTabBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-9.6.1_b72d5d8ccb57a1d592fd8dec1408a5b69bb4f76e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Git\TubTabBar\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
-        <dex dex="C:\Git\TubTabBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_3a3dae348c1494c60e1efaa6eaad06330a5817b4\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Git\TubTabBar\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Git\TubTabBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.0.0_bc28b80340adb4c411d4abbc645a34ea77756fc8\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Git\TubTabBar\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
-        <dex dex="C:\Git\TubTabBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.0.0_8f8ddfc936cd52ebe464011af55677ffe898474c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Alexy\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.7.3\e250c11c1329c7b6b62442a9743befad78be553c\jackson-annotations-2.7.3.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e250c11c1329c7b6b62442a9743befad78be553c">
-        <dex dex="C:\Git\TubTabBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\jackson-annotations-2.7.3_3f9152074baa7fd43889c71a6f1014b67bf7e22e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Git\TubTabBar\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
-        <dex dex="C:\Git\TubTabBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_9110419f4f5f5973715b3bf7b7b7684af73022b4\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Git\TubTabBar\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="6964c400c086dba463082bbb02df32c771195982">
-        <dex dex="C:\Git\TubTabBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_0257a6f2866f666b93c80b9fa8efd5429253ae53\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Git\TubTabBar\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\libs\internal_impl-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
-        <dex dex="C:\Git\TubTabBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_62a2722e7d16643b9a1d2ba961a56fab2a2eebdf\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Git\TubTabBar\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
-        <dex dex="C:\Git\TubTabBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.0.0_feb6f440ebb552a667fe599669d77d3bb97fc37b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Alexy\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.7.3\f12e6cd05cbaecd74d16e685d45b627732939e42\jackson-databind-2.7.3.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="f12e6cd05cbaecd74d16e685d45b627732939e42">
-        <dex dex="C:\Git\TubTabBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\jackson-databind-2.7.3_d56b8f6d95f09b024d41fb90f36c3cbb0a3a1f48\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Git\TubTabBar\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.6.1\jars\classes.jar"
+        jar="/Users/iem/Documents/git/TubBourg/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="af7582c6b327449c6d32518e6a10307860b7b5d6">
-        <dex dex="C:\Git\TubTabBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-9.6.1_ae1326bd45b2f6cd91059ae9e9e24dcdd8621da5\classes.dex" />
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.6.1_0aa65160e441f645bfcab0b6886e08c794f58e7d/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Git\TubTabBar\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.6.1\jars\classes.jar"
+        jar="/Users/iem/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.7.3/1499b854ae9f370409792db5af1b552dc7d9682f/jackson-core-2.7.3.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="4a36600281a648769411ef642c331851732bf29e">
-        <dex dex="C:\Git\TubTabBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-9.6.1_9c8999e8ddfbc59b9c01da715110d1aaaa936787\classes.dex" />
+        sha1="1499b854ae9f370409792db5af1b552dc7d9682f">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/transforms/dex/debug/folders/1000/10/jackson-core-2.7.3_db72c09192e8666ff9713e3730046899897e7f7a/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Git\TubTabBar\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.6.1\jars\classes.jar"
+        jar="/Users/iem/Documents/git/TubBourg/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="62ff84124b89177abc0c27f3e38c9732f2d41617">
-        <dex dex="C:\Git\TubTabBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-maps-9.6.1_2990a695786600dda6634d739833a59ee22507dd\classes.dex" />
+        sha1="eccaaa9ffa6bb4bfbd2e870f01aaf69655d353be">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.6.1_63d405102e9c5ffa0a2d6f918d5980d8f8f1ed14/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Alexy\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.0\support-annotations-25.0.0.jar"
+        jar="/Users/iem/Documents/git/TubBourg/app/build/intermediates/exploded-aar/com.google.maps.android/android-maps-utils/0.4.4/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6f57b76211a1d7b0c1f18873af59faad95664681">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.maps.android-android-maps-utils-0.4.4_c9f61c7d04a62bfe22a2f22a307770aaefd8f754/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/iem/Documents/git/TubBourg/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.0_b57236d60d40417e4bb9118bd9ca250b4ab1efc0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/iem/Documents/git/TubBourg/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.0.0_46031b76972d12fc22a4f0df171eff82d7b3bdf1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/iem/Documents/git/TubBourg/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_11555d42fd293b2d1dcee2ad4134ae0ce00947e5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/iem/Documents/git/TubBourg/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_c389f23d05774784b7b686f9044f8fcf3eef7e4f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/iem/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.7.3/e250c11c1329c7b6b62442a9743befad78be553c/jackson-annotations-2.7.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e250c11c1329c7b6b62442a9743befad78be553c">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/transforms/dex/debug/folders/1000/10/jackson-annotations-2.7.3_dc091a311b66866f63b774f62c80411dca450b3a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/iem/Documents/git/TubBourg/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5e497d60f0cb6ce87c458ac5420a46d0fed49bd0">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.0.0_d5362d70dfd7cace2c28cfcf2b83c030ee61ea61/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/iem/Documents/git/TubBourg/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_22398a00bb52e5a99b5a1907dff4a7b7c3ab6c5f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/iem/Documents/git/TubBourg/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0c6d948e6cb9ea6f535d175fb61ba2930719c0e9">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-transition-25.0.0_492f3e62bad16f10228e174a7452cf29625ba6d3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/iem/Documents/git/TubBourg/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.0_802fff9b42e2601e157e6f539216c438abd55d0b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/iem/Documents/git/TubBourg/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1dd324a91cba420f33be2b3b50d6e8a0207d6e83">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_c6265151409f358591384f4380adb673fca7e6a0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/iem/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.0/support-annotations-25.0.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
-        <dex dex="C:\Git\TubTabBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.0.0_aa0efdf877fd16b263087e51e74671176df72812\classes.dex" />
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.0_5c050f617c7812614944ddd6460cf60e95fdec2b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/iem/Documents/git/TubBourg/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26674000177e45447a0326a6ad84612761199a13">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.0_1619c6998ca924da355fa8c783ba2193173967ee/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/iem/Documents/git/TubBourg/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_344e555e3069a65cadd1f9902610504ba32a9bea/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/iem/Documents/git/TubBourg/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_795901eac5933a6f57f16416a11c152422855318/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/iem/Documents/git/TubBourg/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="62ff84124b89177abc0c27f3e38c9732f2d41617">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-9.6.1_dcf044aebf3f5a784fa9d0c7b766a57ad0cff6db/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/iem/Documents/git/TubBourg/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.0_b9ed6a2f2a92cd534f4ac7acee483edb1085ce86/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/iem/Documents/git/TubBourg/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.0_db14248670c8aa854112382c57a9159921db775d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/iem/Documents/git/TubBourg/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.0_a560860e28268765cb61dd444224b9faf9eb64b1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/iem/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.7.3/f12e6cd05cbaecd74d16e685d45b627732939e42/jackson-databind-2.7.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f12e6cd05cbaecd74d16e685d45b627732939e42">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/transforms/dex/debug/folders/1000/10/jackson-databind-2.7.3_f3923c6c998300fc7ba3ab19048d3e131ab5cfcb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/iem/Documents/git/TubBourg/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4a36600281a648769411ef642c331851732bf29e">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.6.1_4a3013e9c8fe2050c30c24649bdf197cbee3ffc4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/iem/Documents/git/TubBourg/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1c16572023193494d2fefd419ed7886e5448938c">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_2c9a92a12a980099a7b7e5f11d25545c897c644e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/iem/Documents/git/TubBourg/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.0_a639310ae7caed3eec37b8a2ab2ce8cca4b47746/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/iem/Documents/git/TubBourg/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26384be22ddc74cfe197ebda9edbc7d1fd8bd537">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-25.0.0_6119cf54ba901d8caa301bc0dc229201dbc9a85e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/iem/Documents/git/TubBourg/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.0_8b8cf7367bfb24457812cb1defec39bb5d8573fd/classes.dex" />
     </item>
 
 </items>

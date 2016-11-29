@@ -31,7 +31,7 @@ public class Utilities {
         return markers;
     }
 
-    public static int getNextPassageFromNow(List<String> lesHeures){
+    public static String getNextPassageFromNow(List<String> lesHeures){
         List<Integer> lesHEnInt = new ArrayList<Integer>();
         int hour = new Date().getHours();
         int minute = new Date().getMinutes();
@@ -44,17 +44,23 @@ public class Utilities {
         for (int chooseHour : lesHEnInt){
             Log.d("Tag","ChooseHour "+chooseHour+" leheure "+leheure);
             if (leheure < chooseHour){
-                if (lheureareturn < chooseHour){
                     lheureareturn = chooseHour;
+                if (lheureareturn == 0){
+                    lheureareturn = lesHEnInt.get(0);
                 }
+                if (lheureareturn < 10000){
+                    result = lheureareturn/1000+":"+lheureareturn%1000;
+                }
+                else {
+                    result = lheureareturn/1000+":"+lheureareturn%1000;
+                }
+                return result;
             }
+
         }
-        if (lheureareturn == 0){
-            lheureareturn = lesHEnInt.get(0);
-        }
-        if (lheureareturn < 10000){
-            result = "";
-        }//TODO
-        return lheureareturn;
+        return null;
     }
+
+
+
 }
