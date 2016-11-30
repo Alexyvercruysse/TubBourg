@@ -1,14 +1,27 @@
 package com.example.alexy.tubtabbar.Entities;
+import com.example.alexy.tubtabbar.Repositories.TubDatabase;
+import com.raizlabs.android.dbflow.annotation.Column;
+import com.raizlabs.android.dbflow.annotation.PrimaryKey;
+import com.raizlabs.android.dbflow.annotation.Table;
+import com.raizlabs.android.dbflow.structure.BaseModel;
+
 import java.util.List;
 
 /**
  * Created by iem on 18/10/2016.
  */
 
-public class Line {
+@Table(database = TubDatabase.class)
+public class Line extends BaseModel {
 
+    @Column
+    @PrimaryKey
     private int id;
+
+    @Column
     private String name;
+
+    @Column
     private String description;
 
     public Line(){

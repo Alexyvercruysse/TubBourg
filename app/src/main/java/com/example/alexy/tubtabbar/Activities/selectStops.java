@@ -42,9 +42,9 @@ public class selectStops extends AppCompatActivity {
         ligne5.setId(5);
         ligne5.setName("Ligne 5");
         ligne5.setDescription("La description de la ligne 5");
-        gare.setId(1);gare.setName("Gare");gare.setDescription("Gare des bus");gare.setGpsCoord(46.207337, 5.227646);
-        vicaire.setId(2);vicaire.setName("Vicaire");vicaire.setDescription("Arrêt Vicaire");vicaire.setGpsCoord(46.207929, 5.224553);
-        chariteUniversitaire.setId(3);chariteUniversitaire.setName("Charité Universitaire");chariteUniversitaire.setDescription("Arrêt Charité Universitaire");chariteUniversitaire.setGpsCoord(46.207634, 5.219873);
+       // gare.setId(1);gare.setName("Gare");gare.setDescription("Gare des bus");gare.setGpsCoord(46.207337, 5.227646);
+      //  vicaire.setId(2);vicaire.setName("Vicaire");vicaire.setDescription("Arrêt Vicaire");vicaire.setGpsCoord(46.207929, 5.224553);
+       // chariteUniversitaire.setId(3);chariteUniversitaire.setName("Charité Universitaire");chariteUniversitaire.setDescription("Arrêt Charité Universitaire");chariteUniversitaire.setGpsCoord(46.207634, 5.219873);
         ls = new ArrayList<>();
         ls.add(gare);
         ls.add(vicaire);
@@ -58,7 +58,7 @@ public class selectStops extends AppCompatActivity {
             @Override
             public void onMapReady(GoogleMap map) {
 
-                map.moveCamera(CameraUpdateFactory.newLatLngZoom(gare.getGpsCoord(), 13));
+            //    map.moveCamera(CameraUpdateFactory.newLatLngZoom(gare.getGpsCoord(), 13));
                 map.addMarker(Utilities.addStopToMarker(vicaire));
                 map.addMarker(Utilities.addStopToMarker(gare));
                 map.addMarker(Utilities.addStopToMarker(chariteUniversitaire));

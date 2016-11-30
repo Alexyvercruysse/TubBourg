@@ -18,11 +18,13 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.alexy.tubtabbar.Entities.Stop;
 import com.example.alexy.tubtabbar.Fragments.LineFragment;
 import com.example.alexy.tubtabbar.Fragments.MenuFragment;
 import com.example.alexy.tubtabbar.R;
 import com.example.alexy.tubtabbar.Fragments.TravelFragment;
 import com.example.alexy.tubtabbar.Services.HttpService;
+import com.raizlabs.android.dbflow.sql.language.SQLite;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
@@ -33,6 +35,7 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URL;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -57,6 +60,11 @@ public class MainActivity extends AppCompatActivity {
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
+
+        List<Stop> listStops = SQLite.select().from(Stop.class).queryList();
+        for(Stop stop : listStops){
+          Log.d("Stop","name : " + stop.getName());
+        }
 
     }
 

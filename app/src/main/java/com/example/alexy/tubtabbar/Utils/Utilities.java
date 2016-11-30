@@ -24,14 +24,15 @@ public class Utilities {
 
         // Ajout d'un stop en marker sur la map
     public static MarkerOptions addStopToMarker(Stop stop){
-        return new MarkerOptions().title(stop.getName()).position(stop.getGpsCoord()).icon(BitmapDescriptorFactory.fromResource(R.drawable.busmarker));
+       // return new MarkerOptions().title(stop.getName()).position(stop.getGpsCoord()).icon(BitmapDescriptorFactory.fromResource(R.drawable.busmarker));
+        return null;
     }
 
         // Ajout des stops en marker sur la map
     public static List<MarkerOptions> addStopToMarker(List<Stop> stops){
         List<MarkerOptions> markers = new ArrayList<>();
         for (Stop stop:stops){
-            markers.add(new MarkerOptions().title(stop.getName()).position(stop.getGpsCoord()).icon(BitmapDescriptorFactory.fromResource(R.drawable.busmarker)));
+        //    markers.add(new MarkerOptions().title(stop.getName()).position(stop.getGpsCoord()).icon(BitmapDescriptorFactory.fromResource(R.drawable.busmarker)));
         }
         return markers;
     }

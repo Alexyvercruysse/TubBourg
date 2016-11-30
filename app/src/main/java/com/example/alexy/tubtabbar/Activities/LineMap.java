@@ -7,8 +7,6 @@ import android.os.Bundle;
 
 import com.example.alexy.tubtabbar.Entities.Stop;
 import com.example.alexy.tubtabbar.R;
-import com.example.alexy.tubtabbar.Repositories.HourRepositoryImpl;
-import com.example.alexy.tubtabbar.Repositories.StopRepositoryImpl;
 import com.example.alexy.tubtabbar.Utils.Utilities;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -35,15 +33,15 @@ public class LineMap extends AppCompatActivity {
         final int numLine = getIntent().getIntExtra("numLigne",999); // Si pas de valeurs set a 999 pour return null
 
         // Connection au repo pour récupérer les Arrêts
-        final StopRepositoryImpl stopRepository = new StopRepositoryImpl(this);
-        stopRepository.open();
+   //     final StopRepositoryImpl stopRepository = new StopRepositoryImpl(this);
+     //   stopRepository.open();
 
         // Connection au repo pour récupérer les Horraires
-        HourRepositoryImpl hourRepository = new HourRepositoryImpl(this);
-        hourRepository.open();
+     //   HourRepositoryImpl hourRepository = new HourRepositoryImpl(this);
+      //  hourRepository.open();
 
 
-        final List<Stop> stops = hourRepository.getStopsByLine(this,getIntent().getIntExtra("numLigne",999)); // Si pas de valeurs set a 999 pour return null
+      //  final List<Stop> stops = hourRepository.getStopsByLine(this,getIntent().getIntExtra("numLigne",999)); // Si pas de valeurs set a 999 pour return null
 
         // Création de la mapView
         mapView = (MapView) findViewById(R.id.mapView);
@@ -86,9 +84,9 @@ public class LineMap extends AppCompatActivity {
                         case 0:
                             layer = new KmlLayer(map, R.raw.ligne21, getApplicationContext());
                             layer.addLayerToMap();
-                            for (MarkerOptions markerOptions : Utilities.addStopToMarker(stops)){
-                                map.addMarker(markerOptions);
-                            }
+                        //    for (MarkerOptions markerOptions : Utilities.addStopToMarker(stops)){
+                        //        map.addMarker(markerOptions);
+                       //     }
 
                             break;
                     }
@@ -102,9 +100,9 @@ public class LineMap extends AppCompatActivity {
                                     Intent intent = new Intent(getApplication(),stopHours.class);
                                     intent.putExtra("nomArret",marker.getTitle());
                                     intent.putExtra("idLine",numLine);
-                                    intent.putExtra("idStop",stopRepository.getStopByName(marker.getTitle()));
-                                    intent.putExtra("dernierStop",stops.get(0).getName());
-                                    intent.putExtra("premierStop",stops.get(stops.size()-1).getName());
+                           //         intent.putExtra("idStop",stopRepository.getStopByName(marker.getTitle()));
+                            //        intent.putExtra("dernierStop",stops.get(0).getName());
+                             //       intent.putExtra("premierStop",stops.get(stops.size()-1).getName());
                                     startActivity(intent);
                         }
                     });

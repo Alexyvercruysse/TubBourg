@@ -7,7 +7,6 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.alexy.tubtabbar.R;
-import com.example.alexy.tubtabbar.Repositories.HourRepositoryImpl;
 import com.example.alexy.tubtabbar.Utils.Utilities;
 
 import java.util.ArrayList;
@@ -30,30 +29,30 @@ public class stopHours extends AppCompatActivity {
         tvDirection2 = (TextView) findViewById(R.id.tvDirection2);
 
         // Ouverture du repo pour les horraires
-        HourRepositoryImpl hourRepository = new HourRepositoryImpl(this);
-        hourRepository.open();
+        //HourRepositoryImpl hourRepository = new HourRepositoryImpl(this);
+      //  hourRepository.open();
 
         // Récupération des horraires en fonction de la ligne, +1 pour le sens inverse
-        List<String> horraireAllez = hourRepository.getHoursByidLineAndidStop(this,getIntent().getIntExtra("idLine",999),getIntent().getIntExtra("idStop",999));
-        List<String> horraireRetour = hourRepository.getHoursByidLineAndidStop(this,getIntent().getIntExtra("idLine",999)+1,getIntent().getIntExtra("idStop",999));
-        tvDirection1.setText("Direction : "+getIntent().getStringExtra("premierStop")+"\nProchain passage : "+ Utilities.getNextPassageFromNow(horraireAllez)+"\n");
-        tvDirection2.setText("Direction : "+getIntent().getStringExtra("dernierStop")+"\nProchain passage : "+Utilities.getNextPassageFromNow(horraireRetour)+"\n");
-        tvArret.setText("Arrêt : "+getIntent().getStringExtra("nomArret"));
+      //  List<String> horraireAllez = hourRepository.getHoursByidLineAndidStop(this,getIntent().getIntExtra("idLine",999),getIntent().getIntExtra("idStop",999));
+      //  List<String> horraireRetour = hourRepository.getHoursByidLineAndidStop(this,getIntent().getIntExtra("idLine",999)+1,getIntent().getIntExtra("idStop",999));
+      //  tvDirection1.setText("Direction : "+getIntent().getStringExtra("premierStop")+"\nProchain passage : "+ Utilities.getNextPassageFromNow(horraireAllez)+"\n");
+      //  tvDirection2.setText("Direction : "+getIntent().getStringExtra("dernierStop")+"\nProchain passage : "+Utilities.getNextPassageFromNow(horraireRetour)+"\n");
+     //   tvArret.setText("Arrêt : "+getIntent().getStringExtra("nomArret"));
 
 
         // Création des arrayAdapter, par défaut "pas de résultat"
         ArrayAdapter arrayAdapter = new ArrayAdapter(this,android.R.layout.simple_list_item_1, new ArrayList<String>(){{add("Pas de résultat");}} );
         ArrayAdapter arrayAdapter2 = new ArrayAdapter(this,android.R.layout.simple_list_item_1, new ArrayList<String>(){{add("Pas de résultat");}} );
 
-        if (!horraireAllez.isEmpty()){
-            // Remplir arrayAdapter avec la liste d'horraire
-            arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, horraireAllez);
-        }
-        if (!horraireRetour.isEmpty()) {
-            arrayAdapter2 = new ArrayAdapter(this, android.R.layout.simple_list_item_1, horraireRetour);
-        }
+      //  if (!horraireAllez.isEmpty()){
+      //      // Remplir arrayAdapter avec la liste d'horraire
+      //      arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, horraireAllez);
+       // }
+       // if (!horraireRetour.isEmpty()) {
+       //     arrayAdapter2 = new ArrayAdapter(this, android.R.layout.simple_list_item_1, horraireRetour);
+      //  }
 
-        direction1.setAdapter(arrayAdapter);
-        direction2.setAdapter(arrayAdapter2);
+      //  direction1.setAdapter(arrayAdapter);
+      //  direction2.setAdapter(arrayAdapter2);
     }
 }
