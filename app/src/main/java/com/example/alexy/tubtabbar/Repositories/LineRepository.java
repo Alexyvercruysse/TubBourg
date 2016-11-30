@@ -13,4 +13,6 @@ public interface LineRepository {
     List<Line> listLines();
 
     Line getLineById(int idLine);
+
+    Line getLineByName(String nameLine);
 }

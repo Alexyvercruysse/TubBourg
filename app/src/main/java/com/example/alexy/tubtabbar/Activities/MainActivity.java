@@ -65,12 +65,6 @@ public class MainActivity extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
 
-        StopRepository stopRepository = new StopRepositoryImpl();
-
-        List<Stop> listStop = stopRepository.listStopByIdLine(21);
-
-        Log.d("stops in line 21", listStop.size() + "");
-
     }
 
 

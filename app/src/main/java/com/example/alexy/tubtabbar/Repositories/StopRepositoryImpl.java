@@ -39,6 +39,7 @@ public class StopRepositoryImpl implements  StopRepository {
         hourRepository = new HourRepositoryImpl();
         List<Hour> listHour = hourRepository.listHoursByIdLine(idLine);
 
+        //Little algorithm to add list the stops only once
         List<Stop> listStop = new ArrayList<>();
         boolean find = false;
         for(Hour hour : listHour){

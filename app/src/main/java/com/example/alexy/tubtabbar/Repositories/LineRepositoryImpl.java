@@ -21,4 +21,9 @@ public class LineRepositoryImpl implements LineRepository {
     public Line getLineById(int idLine) {
         return  SQLite.select().from(Line.class).where(Line_Table.id.eq(idLine)).querySingle();
     }
+
+    @Override
+    public Line getLineByName(String nameLine) {
+        return  SQLite.select().from(Line.class).where(Line_Table.name.eq(nameLine)).querySingle();
+    }
 }
