@@ -41,10 +41,9 @@ public class LineMap extends AppCompatActivity {
 
         final String nameLine = getIntent().getStringExtra("nameLine"); // Si pas de valeurs set a 999 pour return null
 
-        // Connextion to repositories
+        // Connexion to repositories
         final StopRepository stopRepository = new StopRepositoryImpl();
         final LineRepository lineRepository = new LineRepositoryImpl();
-        final HourRepository hourRepository = new HourRepositoryImpl();
 
         final Line line = lineRepository.getLineByName(nameLine);
 
@@ -52,97 +51,46 @@ public class LineMap extends AppCompatActivity {
 
         mapView = (MapView) findViewById(R.id.mapView);
         mapView.onCreate(savedInstanceState);
+
+
         mapView.getMapAsync(new OnMapReadyCallback() {
             @Override
             public void onMapReady(GoogleMap map) {
                 try {
-                    // switch for choose which kml to display
-                    //FIXME TROUVER UN MOYEN PLUS "JOLI"
-                    switch (line.getId()){
-                        case 1:
-                            layer = new KmlLayer(map, R.raw.ligne1, getApplicationContext());
-                            layer.addLayerToMap();
-                            for (MarkerOptions markerOptions : Utilities.addStopToMarker(stops)){
-                                map.addMarker(markerOptions);
-                            }
-                            break;
-                        case 2:
-                            layer = new KmlLayer(map, R.raw.ligne2, getApplicationContext());
-                            layer.addLayerToMap();
-                            for (MarkerOptions markerOptions : Utilities.addStopToMarker(stops)){
-                                map.addMarker(markerOptions);
-                            }
-                            break;
-                        case 3:
-                            layer = new KmlLayer(map, R.raw.ligne3, getApplicationContext());
-                            layer.addLayerToMap();
-                            for (MarkerOptions markerOptions : Utilities.addStopToMarker(stops)){
-                                map.addMarker(markerOptions);
-                            }
-                            break;
-                        case 4:
-                            layer = new KmlLayer(map, R.raw.ligne4, getApplicationContext());
-                            layer.addLayerToMap();
-                            for (MarkerOptions markerOptions : Utilities.addStopToMarker(stops)) {
-                                map.addMarker(markerOptions);
-                            }
-                            break;
-                        case 5:
-                            layer = new KmlLayer(map, R.raw.ligne5, getApplicationContext());
-                            layer.addLayerToMap();
-                            for (MarkerOptions markerOptions : Utilities.addStopToMarker(stops)){
-                                map.addMarker(markerOptions);
-                            }
-                            break;
-                        case 6:
-                            layer = new KmlLayer(map, R.raw.ligne3, getApplicationContext());
-                            layer.addLayerToMap();
-                            for (MarkerOptions markerOptions : Utilities.addStopToMarker(stops)){
-                                map.addMarker(markerOptions);
-                            }
-                            break;
-                        case 7:
-                            layer = new KmlLayer(map, R.raw.ligne3, getApplicationContext());
-                            layer.addLayerToMap();
-                            for (MarkerOptions markerOptions : Utilities.addStopToMarker(stops)){
-                                map.addMarker(markerOptions);
-                            }
-                            break;
-                        case 21:
-                            layer = new KmlLayer(map, R.raw.ligne21, getApplicationContext());
-                            layer.addLayerToMap();
-                            for (MarkerOptions markerOptions : Utilities.addStopToMarker(stops)){
-                                map.addMarker(markerOptions);
-                            }
-                            break;
+                    layer = new KmlLayer(map, R.raw.class.getField("line"+(String.valueOf(line.getId()))).getInt(null), getApplicationContext());
+                    layer.addLayerToMap();
+                    for (MarkerOptions markerOptions : Utilities.addStopToMarker(stops)) {
+                        map.addMarker(markerOptions);
                     }
 
-                    // Ajout du click sur le nom de l'arrêt
                     map.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
                         @Override
                         public void onInfoWindowClick(Marker marker) {
 
                             //Envoie sur l'activité des horraires avec toutes les informations
-                                    Intent intent = new Intent(getApplication(),stopHours.class);
-                                    intent.putExtra("nameStop", marker.getTitle());
-                                    intent.putExtra("idLine", line.getId());
-                                    intent.putExtra("idStop", stopRepository.getStopByName(marker.getTitle()).getId());
-                                    startActivity(intent);
+                            Intent intent = new Intent(getApplication(), stopHours.class);
+                            intent.putExtra("nameStop", marker.getTitle());
+                            intent.putExtra("idLine", line.getId());
+                            intent.putExtra("idStop", stopRepository.getStopByName(marker.getTitle()).getId());
+                            startActivity(intent);
                         }
                     });
 
-                    // Mouvement de la caméra sur Bourg
+                    //Move Cam on the center of Bourg-en-Bresse
                     map.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(46.207337, 5.227646), 13));
 
                 } catch (XmlPullParserException e) {
                     e.printStackTrace();
                 } catch (IOException e) {
                     e.printStackTrace();
+                } catch (NoSuchFieldException e) {
+                    e.printStackTrace();
+                } catch (IllegalAccessException e) {
+                    e.printStackTrace();
                 }
-
             }
+
         });
         mapView.onResume();
-
     }
 }
