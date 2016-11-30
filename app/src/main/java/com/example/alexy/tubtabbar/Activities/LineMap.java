@@ -124,11 +124,9 @@ public class LineMap extends AppCompatActivity {
 
                             //Envoie sur l'activité des horraires avec toutes les informations
                                     Intent intent = new Intent(getApplication(),stopHours.class);
-                                    intent.putExtra("nameStop",marker.getTitle());
+                                    intent.putExtra("nameStop", marker.getTitle());
                                     intent.putExtra("idLine", line.getId());
                                     intent.putExtra("idStop", stopRepository.getStopByName(marker.getTitle()).getId());
-                                    intent.putExtra("firstStop",stops.get(0).getName());
-                                    intent.putExtra("lastStop",stops.get(stops.size()-1).getName());
                                     startActivity(intent);
                         }
                     });
