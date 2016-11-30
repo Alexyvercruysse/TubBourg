@@ -40,9 +40,18 @@ public class StopRepositoryImpl implements  StopRepository {
         List<Hour> listHour = hourRepository.listHoursByIdLine(idLine);
 
         List<Stop> listStop = new ArrayList<>();
-
+        boolean find = false;
         for(Hour hour : listHour){
-            listStop.add(getStopById(hour.getStop()));
+            Stop stop = getStopById(hour.getStop());
+            for(Stop oneStop : listStop){
+                if(oneStop.getId() == stop.getId()){
+                    find = true;
+                }
+            }
+            if(!find){
+                listStop.add(stop);
+            }
+            find = false;
         }
         return listStop;
     }

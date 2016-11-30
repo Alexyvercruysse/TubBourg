@@ -23,6 +23,8 @@ import com.example.alexy.tubtabbar.Fragments.LineFragment;
 import com.example.alexy.tubtabbar.Fragments.MenuFragment;
 import com.example.alexy.tubtabbar.R;
 import com.example.alexy.tubtabbar.Fragments.TravelFragment;
+import com.example.alexy.tubtabbar.Repositories.LineRepository;
+import com.example.alexy.tubtabbar.Repositories.LineRepositoryImpl;
 import com.example.alexy.tubtabbar.Repositories.StopRepository;
 import com.example.alexy.tubtabbar.Repositories.StopRepositoryImpl;
 import com.example.alexy.tubtabbar.Services.HttpService;
@@ -62,6 +64,12 @@ public class MainActivity extends AppCompatActivity {
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
+
+        StopRepository stopRepository = new StopRepositoryImpl();
+
+        List<Stop> listStop = stopRepository.listStopByIdLine(21);
+
+        Log.d("stops in line 21", listStop.size() + "");
 
     }
 
