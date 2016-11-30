@@ -11,6 +11,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -21,6 +22,17 @@ import com.example.alexy.tubtabbar.Fragments.LineFragment;
 import com.example.alexy.tubtabbar.Fragments.MenuFragment;
 import com.example.alexy.tubtabbar.R;
 import com.example.alexy.tubtabbar.Fragments.TravelFragment;
+import com.example.alexy.tubtabbar.Services.HttpService;
+
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URL;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -45,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
-
 
     }
 
