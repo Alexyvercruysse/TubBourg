@@ -11,16 +11,35 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.alexy.tubtabbar.Entities.Stop;
 import com.example.alexy.tubtabbar.Fragments.LineFragment;
 import com.example.alexy.tubtabbar.Fragments.MenuFragment;
 import com.example.alexy.tubtabbar.R;
 import com.example.alexy.tubtabbar.Fragments.TravelFragment;
+import com.example.alexy.tubtabbar.Repositories.LineRepository;
+import com.example.alexy.tubtabbar.Repositories.LineRepositoryImpl;
+import com.example.alexy.tubtabbar.Repositories.StopRepository;
+import com.example.alexy.tubtabbar.Repositories.StopRepositoryImpl;
+import com.example.alexy.tubtabbar.Services.HttpService;
+import com.raizlabs.android.dbflow.sql.language.SQLite;
+
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URL;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -45,7 +64,6 @@ public class MainActivity extends AppCompatActivity {
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
-
 
     }
 

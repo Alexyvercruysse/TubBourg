@@ -1,27 +1,29 @@
 package com.example.alexy.tubtabbar.Repositories;
 
+import android.database.sqlite.SQLiteDatabase;
+
 /**
  * Created by iem on 18/10/2016.
  */
 
-import android.content.Context;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteException;
-import android.database.sqlite.SQLiteOpenHelper;
-import android.widget.Toast;
+        import android.content.Context;
+        import android.database.sqlite.SQLiteDatabase;
+        import android.database.sqlite.SQLiteException;
+        import android.database.sqlite.SQLiteOpenHelper;
+        import android.widget.Toast;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
+        import java.io.File;
+        import java.io.FileOutputStream;
+        import java.io.IOException;
+        import java.io.InputStream;
+        import java.io.OutputStream;
 
-class MySQLite extends SQLiteOpenHelper {
+public class MySQLite extends SQLiteOpenHelper {
 
     private final Context mycontext;
     private static MySQLite sInstance;
 
-    private static final int DATABASE_VERSION = 2
+    private static final int DATABASE_VERSION = 10
             ; // l'incrément appelle onUpgrade(), décrément => onDowngrade()
     private String DATABASE_PATH; // chemin défini dans le constructeur
     private static final String DATABASE_NAME = "db.sqlite";

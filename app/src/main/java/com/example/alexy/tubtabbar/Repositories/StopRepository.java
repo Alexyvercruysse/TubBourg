@@ -1,24 +1,22 @@
 package com.example.alexy.tubtabbar.Repositories;
 
 import com.example.alexy.tubtabbar.Entities.Stop;
+import com.google.android.gms.maps.model.LatLng;
 
 import java.util.List;
 
 /**
- * Created by iem on 19/10/2016.
+ * Created by iem on 30/11/2016.
  */
 
 public interface StopRepository {
 
-    long addStop(Stop stop);
+    List<Stop> listStops();
 
-    int modStop(Stop stop);
+    Stop getStopById(int idStop);
 
-    int supStop(Stop stop);
+    Stop getStopByName(String nameStop);
 
-    Stop getStop(int id);
+    List<Stop> listStopByIdLine(int idLine);
 
-    List<Stop> getAllStop();
-
-    List<Stop> getStopsById(List<Integer> ids);
 }

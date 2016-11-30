@@ -1,23 +1,23 @@
 package com.example.alexy.tubtabbar.Repositories;
-import android.content.Context;
-import android.database.Cursor;
-
 
 import com.example.alexy.tubtabbar.Entities.Hour;
+import com.example.alexy.tubtabbar.Entities.Stop;
+
+import java.util.List;
 
 /**
- * Created by iem on 19/10/2016.
+ * Created by iem on 30/11/2016.
  */
 
 public interface HourRepository {
 
-    long addHour(Hour hour);
+    List<Hour> listHoursByNameStop(String nameStop);
 
-    int modHour(Hour hour);
+    List<Hour> listHoursByIdLine(int idLine);
 
-    int supHour(Hour hour);
+    List<Hour> listHoursByIdLineAndIdStopAndIdDirection(int idLine, int idStop, int idDirection);
 
-    Hour getHour(Context context, int id);
+    List<Integer> listDirectionsByIdLine(int idLine);
 
-    Cursor getAllHour();
+
 }

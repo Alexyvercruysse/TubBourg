@@ -12,15 +12,20 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.example.alexy.tubtabbar.Activities.LineMap;
+import com.example.alexy.tubtabbar.Entities.Line;
 import com.example.alexy.tubtabbar.R;
+import com.example.alexy.tubtabbar.Repositories.LineRepository;
+import com.example.alexy.tubtabbar.Repositories.LineRepositoryImpl;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class LineFragment extends Fragment {
 
     private View retVal = null;
-    private ListView listLigne;
+    private ListView listLine;
     public LineFragment() {
         // Required empty public constructor
     }
@@ -36,33 +41,34 @@ public class LineFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
+        LineRepository lineRepository = new LineRepositoryImpl();
+
         retVal = inflater.inflate(R.layout.fragment_line, container, false);
-        listLigne = (ListView) retVal.findViewById(R.id.listLigne);
-        // Création de la liste des lignes
-        List<String> ListDeString = new ArrayList<String>(){{add("Ligne 1");add("Ligne 2");add("Ligne 3");add("Ligne 4");add("Ligne 5");add("Ligne 6");add("Ligne 7");add("Ligne 21");}};
-        ArrayAdapter arrayAdapter = new ArrayAdapter(getActivity(),android.R.layout.simple_list_item_1, ListDeString );
-        listLigne.setAdapter(arrayAdapter);
-        // Afficher les horraire de la ligne selectionné
-        listLigne.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listLine = (ListView) retVal.findViewById(R.id.listLigne);
+
+        List <String> listNameLine = new ArrayList<>();
+
+        for(Line line : lineRepository.listLines()){
+            listNameLine.add(line.getName());
+        }
+        //Add all the names of the lines in a listView
+        listLine.setAdapter(new ArrayAdapter(getActivity(), android.R.layout.simple_list_item_1, listNameLine));
+
+        //return the name of the selected line
+        listLine.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                if (i == 7){
-                    showLigneHorraire(0);
-                }
-                else {
-                    showLigneHorraire(i+1);
-                }
+                showLigneHorraire( (String) listLine.getItemAtPosition(i));
             }
         });
         return retVal;
     }
 
-    private void showLigneHorraire(final int numLigne){
-        // Lancement de l'activité avec la map + sa ligne kml grâce au numLigne
+    private void showLigneHorraire(String nameLine){
                 Intent intent = new Intent(getActivity(),LineMap.class);
-                intent.putExtra("numLigne",numLigne);
+                intent.putExtra("nameLine", nameLine);
                 startActivity(intent);
     }
 

@@ -1,22 +1,18 @@
 package com.example.alexy.tubtabbar.Repositories;
 
-import android.database.Cursor;
-
 import com.example.alexy.tubtabbar.Entities.Line;
 
+import java.util.List;
 
 /**
- * Created by iem on 19/10/2016.
+ * Created by iem on 30/11/2016.
  */
 
 public interface LineRepository {
-    long addLine(Line line);
 
-    int modLine(Line line);
+    List<Line> listLines();
 
-    int supLine(Line line);
+    Line getLineById(int idLine);
 
-    Line getLine(int id);
-
-    Cursor getAllLine();
+    Line getLineByName(String nameLine);
 }
