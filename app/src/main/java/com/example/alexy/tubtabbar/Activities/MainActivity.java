@@ -23,6 +23,8 @@ import com.example.alexy.tubtabbar.Fragments.LineFragment;
 import com.example.alexy.tubtabbar.Fragments.MenuFragment;
 import com.example.alexy.tubtabbar.R;
 import com.example.alexy.tubtabbar.Fragments.TravelFragment;
+import com.example.alexy.tubtabbar.Repositories.StopRepository;
+import com.example.alexy.tubtabbar.Repositories.StopRepositoryImpl;
 import com.example.alexy.tubtabbar.Services.HttpService;
 import com.raizlabs.android.dbflow.sql.language.SQLite;
 
@@ -60,11 +62,6 @@ public class MainActivity extends AppCompatActivity {
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
-
-        List<Stop> listStops = SQLite.select().from(Stop.class).queryList();
-        for(Stop stop : listStops){
-          Log.d("Stop","name : " + stop.getName());
-        }
 
     }
 

@@ -15,10 +15,11 @@ public class MyApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        // This instantiates DBFlow
+        //We create our db by a file
         MySQLite db = MySQLite.getInstance(getApplicationContext());
         db.getWritableDatabase();
 
+        // This instantiates DBFlow
         FlowManager.init(new FlowConfig.Builder(this).build());
         // add for verbose logging
         // FlowLog.setMinimumLoggingLevel(FlowLog.Level.V);
