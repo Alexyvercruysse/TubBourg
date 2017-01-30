@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -44,6 +45,7 @@ public class LineFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         LineRepository lineRepository = new LineRepositoryImpl();
+        Log.wtf("Test", lineRepository.listLines().size() + "");
 
         retVal = inflater.inflate(R.layout.fragment_line, container, false);
         listLine = (ListView) retVal.findViewById(R.id.listLigne);

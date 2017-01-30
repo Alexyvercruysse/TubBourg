@@ -1,5 +1,6 @@
 package com.example.alexy.tubtabbar.Repositories;
 
+import com.example.alexy.tubtabbar.Entities.Hour;
 import com.example.alexy.tubtabbar.Entities.Line;
 import com.example.alexy.tubtabbar.Entities.Line_Table;
 import com.raizlabs.android.dbflow.sql.language.SQLite;
@@ -25,5 +26,10 @@ public class LineRepositoryImpl implements LineRepository {
     @Override
     public Line getLineByName(String nameLine) {
         return  SQLite.select().from(Line.class).where(Line_Table.name.eq(nameLine)).querySingle();
+    }
+
+    @Override
+    public void addLine(Line line) {
+        SQLite.insert(Line.class).values(line);
     }
 }

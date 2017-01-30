@@ -8,6 +8,8 @@ import com.raizlabs.android.dbflow.annotation.Table;
 import com.raizlabs.android.dbflow.sql.language.property.DoubleProperty;
 import com.raizlabs.android.dbflow.structure.BaseModel;
 
+import java.util.Date;
+
 /**
  * Created by iem on 18/10/2016.
  */
@@ -30,6 +32,7 @@ public class Stop extends BaseModel {
 
     @Column
     private double longitude;
+
 
     public Stop(){
 
