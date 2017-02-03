@@ -28,7 +28,6 @@ public class LineFragment extends Fragment {
     private View retVal = null;
     private ListView listLine;
     public LineFragment() {
-        // Required empty public constructor
     }
 
     public static LineFragment newInstance() {

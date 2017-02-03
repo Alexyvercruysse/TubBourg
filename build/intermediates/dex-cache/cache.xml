@@ -102,6 +102,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/iem/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.3.0/2b802460eea20f8f2ad9c08c74e0f14718e88aa9/okhttp-3.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2b802460eea20f8f2ad9c08c74e0f14718e88aa9">
+        <dex dex="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/pre-dexed/debug/okhttp-3.3.0_c80cb5e639a03fd974225828a5360770f580514c.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/exploded-aar/com.google.maps.android/android-maps-utils/0.4.4/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -120,6 +129,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/iem/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.0/2de7cd8b95b7021b1d597f049bcb422055119f2c/retrofit-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
+        <dex dex="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/pre-dexed/debug/retrofit-2.1.0_44d7826dd788effc37f46552af77208e220b5ca9.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -135,6 +153,15 @@
         revision="25.0.0"
         sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
         <dex dex="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/pre-dexed/debug/support-annotations-25.0.0_5c050f617c7812614944ddd6460cf60e95fdec2b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.8.0/5ea7af56cc7c567ed9856d99efb30740e9b17ff/okio-1.8.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
+        <dex dex="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/pre-dexed/debug/okio-1.8.0_426e495612e73bef3a8feb36306818ee14d6d831.jar" />
     </item>
     <item
         is-multidex="false"
@@ -189,6 +216,15 @@
         revision="25.0.0"
         sha1="62ff84124b89177abc0c27f3e38c9732f2d41617">
         <dex dex="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-maps-9.6.1_52833eddbc7217a843343359bcc743e29738a3a8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/pre-dexed/debug/gson-2.7_6591e6094ee212519bf9ed46866a671f2e581574.jar" />
     </item>
     <item
         is-multidex="false"
@@ -252,6 +288,15 @@
         revision="25.0.0"
         sha1="eccaaa9ffa6bb4bfbd2e870f01aaf69655d353be">
         <dex dex="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-9.6.1_11e8d99958945e68f1b19dca1855f327e945c5c7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.1.0/aa557d71ead91cbf26e0c316a0f593d168303309/converter-gson-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
+        <dex dex="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/pre-dexed/debug/converter-gson-2.1.0_16627a05c804f7d0b6aaa2c288989ff8ed3a0806.jar" />
     </item>
 
 </items>

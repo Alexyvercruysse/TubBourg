@@ -1,5 +1,7 @@
 package com.example.alexy.tubtabbar.Repositories;
 
+import android.util.Log;
+
 import com.example.alexy.tubtabbar.Entities.Hour;
 import com.example.alexy.tubtabbar.Entities.Hour_Table;
 import com.example.alexy.tubtabbar.Entities.Stop;
@@ -20,37 +22,24 @@ public class HourRepositoryImpl implements HourRepository {
     public List<Hour> listHoursByNameStop(String nameStop) {
         stopRepository = new StopRepositoryImpl();
         Stop stop = stopRepository.getStopByName(nameStop);
-        return SQLite.select().from(Hour.class).where(Hour_Table.stop.eq(stop.getId())).queryList();
+        return SQLite.select().from(Hour.class).where(Hour_Table.idStop.eq(stop.getId())).queryList();
     }
 
     @Override
     public List<Hour> listHoursByIdLine(int idLine) {
-        return SQLite.select().from(Hour.class).where(Hour_Table.line.eq(idLine)).queryList();
-    }
+        List<Hour> hours = new ArrayList<>();
+        hours = SQLite.select().from(Hour.class).queryList();
+        for(Hour hour : hours){
+            Log.d("ID STOP", hour.getIdStop() + "");
+            Log.d("ID LINE", hour.getIdLine() + "");
 
-    @Override
-    public List<Hour> listHoursByIdLineAndIdStopAndIdDirection (int idLine, int idStop, int idDirection) {
-        return SQLite.select().from(Hour.class).where(Hour_Table.line.eq(idLine), Hour_Table.stop.eq(idStop), Hour_Table.direction.eq(idDirection)).queryList();
-    }
-
-    @Override
-    public List<Integer> listDirectionsByIdLine(int idLine) {
-        List<Hour> listHour = SQLite.select().from(Hour.class).where(Hour_Table.line.eq(idLine)).queryList();
-        List<Integer> results = new ArrayList<>();
-        boolean found = false;
-        for(Hour hour : listHour) {
-            int idDir = hour.getDirection();
-            for(int res : results) {
-                if (res == idDir) {
-                    found = true;
-                }
-            }
-            if(!found){
-                results.add(idDir);
-            }
-            found = false;
         }
-        return results;
+        return SQLite.select().from(Hour.class).where(Hour_Table.idLine.eq(idLine)).queryList();
+    }
+
+    @Override
+    public List<Hour> listHoursByDirectionStopAndLine(int direction, int idStop, int idLine) {
+        return SQLite.select().from(Hour.class).where(Hour_Table.direction.eq(direction)).and(Hour_Table.idStop.eq(idStop)).and(Hour_Table.idLine.eq(idLine)).queryList();
     }
 
     @Override
