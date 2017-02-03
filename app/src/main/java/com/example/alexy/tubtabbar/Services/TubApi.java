@@ -29,7 +29,7 @@ public interface TubApi {
     @GET("stop/list")
     Call<Map<String, Stop>> listStops();
 
-    @GET("utils/data/db")
+    @GET("line/list")
     Call<Map<String, Line>> listLines();
 
 }
