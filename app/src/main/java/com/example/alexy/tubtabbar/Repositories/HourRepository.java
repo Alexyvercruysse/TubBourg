@@ -15,9 +15,7 @@ public interface HourRepository {
 
     List<Hour> listHoursByIdLine(int idLine);
 
-    List<Hour> listHoursByIdLineAndIdStopAndIdDirection(int idLine, int idStop, int idDirection);
-
-    List<Integer> listDirectionsByIdLine(int idLine);
+    List<Hour> listHoursByDirectionStopAndLine(int direction, int idStop, int idLine);
 
     void addHour(Hour hour);
 }

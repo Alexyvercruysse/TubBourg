@@ -13,6 +13,7 @@
 
     <receiver android:name=".NetworkStateReceiver">
         <intent-filter>
+            <action android:name="android.net" />
             <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
         </intent-filter>
     </receiver>
