@@ -1,18 +1,34 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.alexy.tubtabbar.Fragments.MenuFragment">
+    tools:context="com.example.alexy.tubtabbar.Fragments.MenuFragment"
+    android:weightSum="1">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="150dp"
         android:text="Bienvenue sur l'application TubTabBar de Mazet Vincent et Vercruysse Alexy. \n\n Ceci est une version beta."
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:gravity="center"
         android:padding="16dp"
         android:id="@+id/textView2" />
+
+    <TextView
+        android:text="Pour utiliser cette application vous devez vous connecter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/cardview_dark_background"
+        android:layout_weight="0.22" />
+
+    <Button
+        android:text="Je veux me connecter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/connectionButton" />
 
 </LinearLayout>
