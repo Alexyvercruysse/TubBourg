@@ -33,10 +33,6 @@ public class NetworkStateReceiver extends BroadcastReceiver {
             if (ni != null && ni.isConnectedOrConnecting()) {
                 Log.i(TAG, "Network " + ni.getTypeName() + " connected");
                 //TODO UPDATE BDD
-                HourRepository hourRepository = new HourRepositoryImpl();
-                StopRepository stopRepository = new StopRepositoryImpl();
-                LineRepository lineRepository = new LineRepositoryImpl();
-
                 Log.i(TAG, "BDD " + ni.getTypeName() + " updated");
             } else if (intent.getBooleanExtra(ConnectivityManager.EXTRA_NO_CONNECTIVITY, Boolean.FALSE)) {
                 Log.d(TAG, "There's no network connectivity");

@@ -3,255 +3,255 @@
 
     <item
         is-multidex="false"
-        jar="F:\Projets\TubBourg\app\build\intermediates\exploded-aar\com.android.support\design\25.0.0\jars\classes.jar"
+        jar="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="26384be22ddc74cfe197ebda9edbc7d1fd8bd537">
-        <dex dex="F:\Projets\TubBourg\app\build\intermediates\pre-dexed\debug\com.android.support-design-25.0.0_9b1fe1268d2b5c02f88980440d724409627bf3a8.jar" />
+        <dex dex="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/pre-dexed/debug/com.android.support-design-25.0.0_e818cf64c95ca67979646dc69726bd1cf16046b1.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="F:\Projets\TubBourg\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
-        <dex dex="F:\Projets\TubBourg\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.0.0_9f0256d32d8242709a3a8d99cb350f546cd83370.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\V\.gradle\caches\modules-2\files-2.1\com.github.Raizlabs.DBFlow\dbflow-core\4.0.0-beta2\5e4cc4f3b5bcaa12a8053b4a1ecf0c738821a91b\dbflow-core-4.0.0-beta2.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="5e4cc4f3b5bcaa12a8053b4a1ecf0c738821a91b">
-        <dex dex="F:\Projets\TubBourg\app\build\intermediates\pre-dexed\debug\dbflow-core-4.0.0-beta2_c4488c0467ec565825e6b9a49679cbb961c758be.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="F:\Projets\TubBourg\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.6.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="eccaaa9ffa6bb4bfbd2e870f01aaf69655d353be">
-        <dex dex="F:\Projets\TubBourg\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-9.6.1_f20415805cfa189a9c3e86f6ef814f7d4b8c97a1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="F:\Projets\TubBourg\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
-        <dex dex="F:\Projets\TubBourg\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.0.0_82637f36fe26c4345fe3812cde558f25605d1250.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="F:\Projets\TubBourg\app\build\intermediates\exploded-aar\com.google.maps.android\android-maps-utils\0.4.4\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="6f57b76211a1d7b0c1f18873af59faad95664681">
-        <dex dex="F:\Projets\TubBourg\app\build\intermediates\pre-dexed\debug\com.google.maps.android-android-maps-utils-0.4.4_35dfba972aae64cb58bc0a6abd75272cc824d8b9.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="F:\Projets\TubBourg\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
-        <dex dex="F:\Projets\TubBourg\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_2a0b3d0dba0938076143b1ab9645048355bd71b2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="F:\Projets\TubBourg\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
-        <dex dex="F:\Projets\TubBourg\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.0.0_eee2d6766dd0c2e50c8dadd0f94242fe6d993bdc.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\V\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.7.3\e250c11c1329c7b6b62442a9743befad78be553c\jackson-annotations-2.7.3.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e250c11c1329c7b6b62442a9743befad78be553c">
-        <dex dex="F:\Projets\TubBourg\app\build\intermediates\pre-dexed\debug\jackson-annotations-2.7.3_d5375ce9f5b0e579ff419de4b0a6f45436767847.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="F:\Projets\TubBourg\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.6.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="af7582c6b327449c6d32518e6a10307860b7b5d6">
-        <dex dex="F:\Projets\TubBourg\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-9.6.1_927b823d41f0e80d152cbe7d965e475f30bec62a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="F:\Projets\TubBourg\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
-        <dex dex="F:\Projets\TubBourg\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.0.0_e4db62b1160d90e7c24cd9a752a1281e337afda6.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="F:\Projets\TubBourg\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
-        <dex dex="F:\Projets\TubBourg\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.0.0_dedea249f2ec2267780905ecaba94fa3367b61d8.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="F:\Projets\TubBourg\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="26674000177e45447a0326a6ad84612761199a13">
-        <dex dex="F:\Projets\TubBourg\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.0.0_57454945d17055c2d62e390253e49407c4ecc7ba.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="F:\Projets\TubBourg\app\build\intermediates\exploded-aar\com.github.Raizlabs.DBFlow\dbflow\4.0.0-beta2\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="10f85341d6f1981bb965100870155d8e65a1edcc">
-        <dex dex="F:\Projets\TubBourg\app\build\intermediates\pre-dexed\debug\com.github.Raizlabs.DBFlow-dbflow-4.0.0-beta2_22661dd7403431dd8caaffbfab0d1e05b43cc6c4.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="F:\Projets\TubBourg\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
-        <dex dex="F:\Projets\TubBourg\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.0.0_8d2f9a3c0ca74a1d747b16bf45eb71bc7f1b2b26.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="F:\Projets\TubBourg\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\libs\internal_impl-25.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
-        <dex dex="F:\Projets\TubBourg\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_917611787c355770d007c5adaef0e68ab2d72ed3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="F:\Projets\TubBourg\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="F:\Projets\TubBourg\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.0.0_bfb146d3bf7f7b6ee0752ffdc05a545d49751388.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="F:\Projets\TubBourg\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="5e497d60f0cb6ce87c458ac5420a46d0fed49bd0">
-        <dex dex="F:\Projets\TubBourg\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-25.0.0_433e2db46ca582b82902895dbf35c8c6169962a4.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\V\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.7.3\f12e6cd05cbaecd74d16e685d45b627732939e42\jackson-databind-2.7.3.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="f12e6cd05cbaecd74d16e685d45b627732939e42">
-        <dex dex="F:\Projets\TubBourg\app\build\intermediates\pre-dexed\debug\jackson-databind-2.7.3_669541a7339bbd8bae39c6e34d047dbf602c7b12.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="F:\Projets\TubBourg\app\build\intermediates\exploded-aar\com.android.support\transition\25.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="0c6d948e6cb9ea6f535d175fb61ba2930719c0e9">
-        <dex dex="F:\Projets\TubBourg\app\build\intermediates\pre-dexed\debug\com.android.support-transition-25.0.0_d7c5adf20f0d5558f5efe614ade456e525fb0a07.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\V\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.7.3\1499b854ae9f370409792db5af1b552dc7d9682f\jackson-core-2.7.3.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="1499b854ae9f370409792db5af1b552dc7d9682f">
-        <dex dex="F:\Projets\TubBourg\app\build\intermediates\pre-dexed\debug\jackson-core-2.7.3_7f82286b1eab5a1d490909d6b4ef30afb3a9b1a3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="F:\Projets\TubBourg\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.6.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="62ff84124b89177abc0c27f3e38c9732f2d41617">
-        <dex dex="F:\Projets\TubBourg\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-maps-9.6.1_302e2b9149eb2c1ca320582ecd74fa84aa663ad1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="F:\Projets\TubBourg\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\libs\internal_impl-25.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
-        <dex dex="F:\Projets\TubBourg\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_dd3f78cdb64b58a3add718ac929c1af5c0d6718e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="F:\Projets\TubBourg\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.6.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="4a36600281a648769411ef642c331851732bf29e">
-        <dex dex="F:\Projets\TubBourg\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-9.6.1_1eef2e1c6fb8d362cb19cb1f4335ea19d497ec7b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="F:\Projets\TubBourg\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
-        <dex dex="F:\Projets\TubBourg\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_a9b4cb8cb9203bc93ffee38bf2f8498a300ca3cc.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\V\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.0\support-annotations-25.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
-        <dex dex="F:\Projets\TubBourg\app\build\intermediates\pre-dexed\debug\support-annotations-25.0.0_70eeb0ca9ae74ab58df8333e4975530e5aad18f5.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="F:\Projets\TubBourg\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\libs\internal_impl-25.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
-        <dex dex="F:\Projets\TubBourg\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.0_4ebaf46e87d5abae5d8b31b5f9af6bbb481f0460.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="F:\Projets\TubBourg\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\classes.jar"
+        jar="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
-        <dex dex="F:\Projets\TubBourg\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.0.0_7c91c4984714095d1a2bea5ec3dabdf82cdc42dd.jar" />
+        <dex dex="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.0.0_16a77c6f5c38c08ea43c2d7a296f72189728d024.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.0.0_83a0a177a4ba11d1a7048d47c2a667253e9eee5b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_39b09c076aac77af8856f8f4339aa6de5275c12e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
+        <dex dex="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.0.0_abbaf4ddc6998eecbe9c434c47dfb764ff84d031.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4a36600281a648769411ef642c331851732bf29e">
+        <dex dex="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-9.6.1_734dd64be2d19b807a6d595f6cc983b59ad3c338.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
+        <dex dex="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.0.0_75df17b52d08d6c4c2674e4f7c8429377d8d6b3c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="af7582c6b327449c6d32518e6a10307860b7b5d6">
+        <dex dex="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-9.6.1_c84f5b7832dbb870236ee72febcb2b7cfadc35c0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.7.3/f12e6cd05cbaecd74d16e685d45b627732939e42/jackson-databind-2.7.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f12e6cd05cbaecd74d16e685d45b627732939e42">
+        <dex dex="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/pre-dexed/debug/jackson-databind-2.7.3_f3923c6c998300fc7ba3ab19048d3e131ab5cfcb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
+        <dex dex="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_941375e56e8e1072c5c084d3363474544b5d4300.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
+        <dex dex="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.0.0_de3a852ec3882dac8d48f358b9d701351eeeff51.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/exploded-aar/com.google.maps.android/android-maps-utils/0.4.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6f57b76211a1d7b0c1f18873af59faad95664681">
+        <dex dex="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/pre-dexed/debug/com.google.maps.android-android-maps-utils-0.4.4_64f46ae4d0c3ba94f297bbc95d45b9775d2ff67f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_4356c8e24169123579362433ce712cde8bb1e742.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0c6d948e6cb9ea6f535d175fb61ba2930719c0e9">
+        <dex dex="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/pre-dexed/debug/com.android.support-transition-25.0.0_cf7f9de9ef2eff05d73570bb0d3e1b6ef1ec7a06.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.0/support-annotations-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
+        <dex dex="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/pre-dexed/debug/support-annotations-25.0.0_5c050f617c7812614944ddd6460cf60e95fdec2b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.gradle/caches/modules-2/files-2.1/com.github.Raizlabs.DBFlow/dbflow-core/4.0.0-beta2/5e4cc4f3b5bcaa12a8053b4a1ecf0c738821a91b/dbflow-core-4.0.0-beta2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5e4cc4f3b5bcaa12a8053b4a1ecf0c738821a91b">
+        <dex dex="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/pre-dexed/debug/dbflow-core-4.0.0-beta2_87fccb334caef09839395a4e1f3c3b6154d03e72.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
+        <dex dex="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_0f949361e65e7a1aaf8521f1b051bd81b50b8135.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/exploded-aar/com.github.Raizlabs.DBFlow/dbflow/4.0.0-beta2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="10f85341d6f1981bb965100870155d8e65a1edcc">
+        <dex dex="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/pre-dexed/debug/com.github.Raizlabs.DBFlow-dbflow-4.0.0-beta2_6d3d37a6d1769ac985797c1b8beb4ab3150b1e36.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.7.3/1499b854ae9f370409792db5af1b552dc7d9682f/jackson-core-2.7.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1499b854ae9f370409792db5af1b552dc7d9682f">
+        <dex dex="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/pre-dexed/debug/jackson-core-2.7.3_db72c09192e8666ff9713e3730046899897e7f7a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26674000177e45447a0326a6ad84612761199a13">
+        <dex dex="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.0.0_8f12f994e64bdd93a46838b9b537794c38da5e3f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="62ff84124b89177abc0c27f3e38c9732f2d41617">
+        <dex dex="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-maps-9.6.1_52833eddbc7217a843343359bcc743e29738a3a8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5e497d60f0cb6ce87c458ac5420a46d0fed49bd0">
+        <dex dex="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.0.0_91d2d5025d4923551d1ab1c67ff7667be7169535.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.0.0_7d54b0b0d0fc4b4c6ce62a9c23498263c1a28d0e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.0.0_caf62cf900d7af3c6fff1cd54728e5b70b793264.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.0.0_4485b4e34cb185af687a83d1da3813b46e6e3084.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_88cf61b94b1afa5366f18f1ae15417f0ea1d40be.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.7.3/e250c11c1329c7b6b62442a9743befad78be553c/jackson-annotations-2.7.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e250c11c1329c7b6b62442a9743befad78be553c">
+        <dex dex="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/pre-dexed/debug/jackson-annotations-2.7.3_dc091a311b66866f63b774f62c80411dca450b3a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="eccaaa9ffa6bb4bfbd2e870f01aaf69655d353be">
+        <dex dex="/Users/iem/Desktop/Projets/Android/TubBourg/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-9.6.1_11e8d99958945e68f1b19dca1855f327e945c5c7.jar" />
     </item>
 
 </items>
