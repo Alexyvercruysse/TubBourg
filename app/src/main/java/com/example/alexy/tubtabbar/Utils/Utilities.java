@@ -7,6 +7,10 @@ import com.example.alexy.tubtabbar.Entities.Hour;
 import com.example.alexy.tubtabbar.Entities.Line;
 import com.example.alexy.tubtabbar.Entities.Stop;
 import com.example.alexy.tubtabbar.R;
+import com.example.alexy.tubtabbar.Repositories.LineRepository;
+import com.example.alexy.tubtabbar.Repositories.LineRepositoryImpl;
+import com.example.alexy.tubtabbar.Repositories.StopRepository;
+import com.example.alexy.tubtabbar.Repositories.StopRepositoryImpl;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
@@ -71,5 +75,4 @@ public class Utilities {
         }
         return result;
     }
-
 }

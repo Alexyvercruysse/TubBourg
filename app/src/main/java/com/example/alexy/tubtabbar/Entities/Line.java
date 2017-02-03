@@ -29,6 +29,11 @@ public class Line extends BaseModel {
 
     }
 
+    public Line(String name, String description){
+        this.name = name;
+        this.description = description;
+    }
+
     public int getId() {
         return id;
     }

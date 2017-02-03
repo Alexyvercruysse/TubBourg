@@ -1,5 +1,7 @@
 package com.example.alexy.tubtabbar.Repositories;
 
+import android.util.Log;
+
 import com.example.alexy.tubtabbar.Entities.Hour;
 import com.example.alexy.tubtabbar.Entities.Stop;
 import com.example.alexy.tubtabbar.Entities.Stop_Table;
@@ -41,18 +43,11 @@ public class StopRepositoryImpl implements  StopRepository {
 
         //Little algorithm to add list the stops only once
         List<Stop> listStop = new ArrayList<>();
-        boolean find = false;
         for(Hour hour : listHour){
-            Stop stop = getStopById(hour.getStop());
-            for(Stop oneStop : listStop){
-                if(oneStop.getId() == stop.getId()){
-                    find = true;
-                }
-            }
-            if(!find){
+            Stop stop = getStopById(hour.getIdStop());
+            if(!listStop.contains(stop)){
                 listStop.add(stop);
             }
-            find = false;
         }
         return listStop;
     }

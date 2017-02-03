@@ -42,26 +42,23 @@ public class stopHours extends AppCompatActivity {
         int idLine = getIntent().getIntExtra("idLine", 999);
         int idStop = getIntent().getIntExtra("idStop", 999);
 
-        List<Integer> directions = hourRepository.listDirectionsByIdLine(idLine);
-
-        if (directions.size() == 2) {
-            List<Hour> firstDirection = hourRepository.listHoursByIdLineAndIdStopAndIdDirection(idLine, idStop, directions.get(0));
-            List<Hour> secondDirection = hourRepository.listHoursByIdLineAndIdStopAndIdDirection(idLine, idStop, directions.get(1));
+         List<Hour> firstDirection = hourRepository.listHoursByDirectionStopAndLine(0, idStop, idLine);
+         List<Hour> secondDirection = hourRepository.listHoursByDirectionStopAndLine(1, idStop, idLine);
 
 
-            tvDirection1.setText("Direction : " + stopRepository.getStopById(directions.get(0)).getName() + "\n Prochain passage : " + Utilities.getNextPassageFromNow(firstDirection) + "\n");
-            tvDirection2.setText("Direction : " + stopRepository.getStopById(directions.get(1)).getName()  + "\n Prochain passage : " + Utilities.getNextPassageFromNow(secondDirection) + "\n");
-            tvStop.setText("Arrêt : " + getIntent().getStringExtra("nameStop"));
+         tvDirection1.setText("Direction : " + stopRepository.getStopById(firstDirection.get(0).getIdStartStop()).getName() + "\n Prochain passage : " + Utilities.getNextPassageFromNow(firstDirection) + "\n");
+         tvDirection2.setText("Direction : " + stopRepository.getStopById(secondDirection.get(0).getIdEndStop()).getName()  + "\n Prochain passage : " + Utilities.getNextPassageFromNow(secondDirection) + "\n");
+         tvStop.setText("Arrêt : " + getIntent().getStringExtra("nameStop"));
 
 
-            ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, new ArrayList<String>() {{
-                add("Pas de résultat");
-            }});
-            ArrayAdapter arrayAdapter2 = new ArrayAdapter(this, android.R.layout.simple_list_item_1, new ArrayList<String>() {{
-                add("Pas de résultat");
-            }});
+         ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, new ArrayList<String>() {{
+              add("Pas de résultat");
+          }});
+         ArrayAdapter arrayAdapter2 = new ArrayAdapter(this, android.R.layout.simple_list_item_1, new ArrayList<String>() {{
+              add("Pas de résultat");
+          }});
 
-            if (!firstDirection.isEmpty()) {
+        if (!firstDirection.isEmpty()) {
                 List<String> hours = new ArrayList<>();
                 for (Hour hour : firstDirection) {
                     hours.add(hour.getHour());
@@ -78,6 +75,5 @@ public class stopHours extends AppCompatActivity {
 
             direction1.setAdapter(arrayAdapter);
             direction2.setAdapter(arrayAdapter2);
-        }
     }
 }
