@@ -19,5 +19,5 @@ public interface HourRepository {
 
     List<Integer> listDirectionsByIdLine(int idLine);
 
-
+    void addHour(Hour hour);
 }

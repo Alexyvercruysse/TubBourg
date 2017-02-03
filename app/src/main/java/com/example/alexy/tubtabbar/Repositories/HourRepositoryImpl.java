@@ -53,4 +53,8 @@ public class HourRepositoryImpl implements HourRepository {
         return results;
     }
 
+    @Override
+    public void addHour(Hour hour) {
+         SQLite.insert(Hour.class).values(hour);
+    }
 }

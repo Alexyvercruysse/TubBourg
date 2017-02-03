@@ -19,4 +19,6 @@ public interface StopRepository {
 
     List<Stop> listStopByIdLine(int idLine);
 
+    void addStop(Stop stop);
+
 }

@@ -10,7 +10,8 @@ import android.database.sqlite.SQLiteDatabase;
         import android.database.sqlite.SQLiteDatabase;
         import android.database.sqlite.SQLiteException;
         import android.database.sqlite.SQLiteOpenHelper;
-        import android.widget.Toast;
+import android.util.Log;
+import android.widget.Toast;
 
         import java.io.File;
         import java.io.FileOutputStream;
@@ -23,7 +24,7 @@ public class MySQLite extends SQLiteOpenHelper {
     private final Context mycontext;
     private static MySQLite sInstance;
 
-    private static final int DATABASE_VERSION = 14; // l'incrément appelle onUpgrade(), décrément => onDowngrade()
+    private static final int DATABASE_VERSION = 1; // l'incrément appelle onUpgrade(), décrément => onDowngrade()
     private String DATABASE_PATH; // chemin défini dans le constructeur
     private static final String DATABASE_NAME = "db.sqlite";
 
@@ -42,6 +43,7 @@ public class MySQLite extends SQLiteOpenHelper {
 
         // Si la bdd n'existe pas dans le dossier de l'app
         if (!checkdatabase()) {
+            Log.d("Test","test");
             // copy db de 'assets' vers DATABASE_PATH
             copydatabase();
         }

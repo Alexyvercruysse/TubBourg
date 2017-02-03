@@ -15,4 +15,6 @@ public interface LineRepository {
     Line getLineById(int idLine);
 
     Line getLineByName(String nameLine);
+
+    void addLine(Line line);
 }

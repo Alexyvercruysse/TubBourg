@@ -57,4 +57,9 @@ public class StopRepositoryImpl implements  StopRepository {
         return listStop;
     }
 
+    @Override
+    public void addStop(Stop stop) {
+        SQLite.insert(Stop.class).values(stop);
+    }
+
 }
