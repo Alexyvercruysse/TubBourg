@@ -10,6 +10,7 @@ import android.util.Log;
 import com.example.alexy.tubtabbar.Entities.Hour;
 import com.example.alexy.tubtabbar.Entities.Line;
 import com.example.alexy.tubtabbar.Entities.Stop;
+import com.example.alexy.tubtabbar.Fragments.LineFragment;
 import com.example.alexy.tubtabbar.Services.TubApi;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -82,7 +83,6 @@ public class NetworkStateReceiver extends BroadcastReceiver {
                                     t.printStackTrace();
                                 }
                             });
-
 
                 Log.i(TAG, "BDD " + ni.getTypeName() + " updated");
             } else if (intent.getBooleanExtra(ConnectivityManager.EXTRA_NO_CONNECTIVITY, Boolean.FALSE)) {
