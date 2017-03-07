@@ -6,18 +6,34 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
+import android.test.suitebuilder.TestMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.alexy.tubtabbar.Activities.selectStops;
+import com.example.alexy.tubtabbar.Entities.Hour;
 import com.example.alexy.tubtabbar.Entities.Line;
+import com.example.alexy.tubtabbar.Entities.Stop;
 import com.example.alexy.tubtabbar.R;
+import com.example.alexy.tubtabbar.Repositories.HourRepository;
+import com.example.alexy.tubtabbar.Repositories.HourRepositoryImpl;
 import com.example.alexy.tubtabbar.Repositories.LineRepository;
 import com.example.alexy.tubtabbar.Repositories.LineRepositoryImpl;
+import com.example.alexy.tubtabbar.Repositories.StopRepository;
+import com.example.alexy.tubtabbar.Repositories.StopRepositoryImpl;
+import com.example.alexy.tubtabbar.Utils.Utilities;
+
+import org.w3c.dom.Text;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
 
 import static android.app.Activity.RESULT_OK;
 
@@ -26,9 +42,11 @@ public class TravelFragment extends Fragment {
     static final int STOP_REQUEST = 0;
     static final int STOP_REQUEST_END = 1;
     private LineRepository lineRepository;
-    Button buttonStart, buttonEnd, buttonRun;
+    private Button buttonStart, buttonEnd, buttonRun;
+    private TextView result;
     private View view;
     private int idLine;
+    private Stop startStop, endStop;
     public TravelFragment() {
     }
 
@@ -52,6 +70,7 @@ public class TravelFragment extends Fragment {
         buttonStart = (Button) view.findViewById(R.id.buttonStopStart);
         buttonEnd = (Button) view.findViewById(R.id.buttonStopEnd);
         buttonRun = (Button) view.findViewById(R.id.buttonRun);
+        result = (TextView) view.findViewById(R.id.result);
 
         buttonStart.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,6 +90,29 @@ public class TravelFragment extends Fragment {
                     myIntent.putExtra("idLine", idLine);
                     myIntent.putExtra("EndStops", true);
                     startActivityForResult(myIntent, STOP_REQUEST_END);
+                }
+            }
+        });
+
+        buttonRun.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(startStop != null && endStop != null){
+                    HourRepository hourRepository = new HourRepositoryImpl();
+                    List<Hour> startHourList = hourRepository.listHoursByNameStop(startStop.getName());
+                    String firstPassage = Utilities.getNextPassageFromDate(startHourList, null);
+                    SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH:mm");
+                    Date firstDate = new Date();
+                    try {
+                        firstDate = simpleDateFormat.parse(firstPassage);
+                    } catch (ParseException e) {
+                        e.printStackTrace();
+                    }
+                    List<Hour> endHourList = hourRepository.listHoursByNameStop(endStop.getName());
+                    String secondPassage = Utilities.getNextPassageFromDate(endHourList, firstDate);
+                    result.setText(String.format("arrêt %s - prochain passage : %s \n arrêt %s - prochain passage : %s",startStop.getName(), firstPassage, endStop.getName(), secondPassage));
+                } else {
+                    Toast.makeText(getActivity(),"Veuillez sélectionner les arrêts",Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -128,15 +170,16 @@ public class TravelFragment extends Fragment {
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data)
     {
+        StopRepository stopRepository = new StopRepositoryImpl();
         if (requestCode == STOP_REQUEST && resultCode == RESULT_OK)
         {
-            buttonStart.setText("Départ : "+data.getStringExtra("result"));
+            buttonStart.setText("Départ : " + data.getStringExtra("result"));
+            startStop = stopRepository.getStopByName(data.getStringExtra("result"));
         }
         if (requestCode == STOP_REQUEST_END && resultCode == RESULT_OK)
         {
-            buttonEnd.setText("Arrivé : "+data.getStringExtra("result"));
+            buttonEnd.setText("Arrivé : " + data.getStringExtra("result"));
+            endStop = stopRepository.getStopByName(data.getStringExtra("result"));
         }
     }
-
-
 }

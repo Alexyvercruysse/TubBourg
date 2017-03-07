@@ -46,8 +46,8 @@ public class stopHours extends AppCompatActivity {
          List<Hour> secondDirection = hourRepository.listHoursByDirectionStopAndLine(1, idStop, idLine);
 
 
-         tvDirection1.setText("Direction : " + stopRepository.getStopById(firstDirection.get(0).getIdEndStop()).getName() + "\n Prochain passage : " + Utilities.getNextPassageFromNow(firstDirection) + "\n");
-         tvDirection2.setText("Direction : " + stopRepository.getStopById(secondDirection.get(0).getIdEndStop()).getName()  + "\n Prochain passage : " + Utilities.getNextPassageFromNow(secondDirection) + "\n");
+         tvDirection1.setText("Direction : " + stopRepository.getStopById(firstDirection.get(0).getIdEndStop()).getName() + "\n Prochain passage : " + Utilities.getNextPassageFromDate(firstDirection, null) + "\n");
+         tvDirection2.setText("Direction : " + stopRepository.getStopById(secondDirection.get(0).getIdEndStop()).getName()  + "\n Prochain passage : " + Utilities.getNextPassageFromDate(secondDirection, null) + "\n");
          tvStop.setText("Arrêt : " + getIntent().getStringExtra("nameStop"));
 
 
