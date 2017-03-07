@@ -3,7 +3,9 @@ package com.example.alexy.tubtabbar.Fragments;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
 import android.test.suitebuilder.TestMethod;
@@ -13,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.TimePicker;
 import android.widget.Toast;
 
 import com.example.alexy.tubtabbar.Activities.selectStops;
@@ -32,6 +35,7 @@ import org.w3c.dom.Text;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -44,6 +48,7 @@ public class TravelFragment extends Fragment {
     private LineRepository lineRepository;
     private Button buttonStart, buttonEnd, buttonRun;
     private TextView result;
+    private TimePicker timePicker;
     private View view;
     private int idLine;
     private Stop startStop, endStop;
@@ -71,6 +76,7 @@ public class TravelFragment extends Fragment {
         buttonEnd = (Button) view.findViewById(R.id.buttonStopEnd);
         buttonRun = (Button) view.findViewById(R.id.buttonRun);
         result = (TextView) view.findViewById(R.id.result);
+        timePicker = (TimePicker) view.findViewById(R.id.timePickerTravel);
 
         buttonStart.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -95,13 +101,24 @@ public class TravelFragment extends Fragment {
         });
 
         buttonRun.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.M)
             @Override
             public void onClick(View view) {
                 if(startStop != null && endStop != null){
                     HourRepository hourRepository = new HourRepositoryImpl();
-                    List<Hour> startHourList = hourRepository.listHoursByNameStop(startStop.getName());
-                    String firstPassage = Utilities.getNextPassageFromDate(startHourList, null);
                     SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH:mm");
+
+
+                    List<Hour> startHourList = hourRepository.listHoursByNameStop(startStop.getName());
+                    String date = timePicker.getHour() + ":" + timePicker.getMinute();
+                    Date choosedDate = new Date();
+                    try {
+                        choosedDate = simpleDateFormat.parse(date);
+                    } catch (ParseException e) {
+                        e.printStackTrace();
+                    }
+
+                    String firstPassage = Utilities.getNextPassageFromDate(startHourList, choosedDate);
                     Date firstDate = new Date();
                     try {
                         firstDate = simpleDateFormat.parse(firstPassage);
