@@ -38,4 +38,13 @@
         android:id="@+id/connectionAdminButton"
         android:layout_marginTop="20dp" />
 
+    <TextView
+        android:id="@+id/weatherTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Chargement de la météo..."
+        android:textColor="@color/cardview_dark_background" />
+
 </LinearLayout>

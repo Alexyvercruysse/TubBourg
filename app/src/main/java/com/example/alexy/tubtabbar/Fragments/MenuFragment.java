@@ -4,6 +4,8 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
@@ -17,6 +19,14 @@ import android.widget.Toast;
 
 import com.example.alexy.tubtabbar.Activities.Connection;
 import com.example.alexy.tubtabbar.R;
+import com.example.alexy.tubtabbar.Services.TubApi;
+import com.example.alexy.tubtabbar.Services.WeatherApi;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.http.GET;
+
 import static android.content.Context.MODE_PRIVATE;
 
 public class MenuFragment extends Fragment {
@@ -24,6 +34,8 @@ public class MenuFragment extends Fragment {
     private View retVal = null;
     private Button connectionButton, connectionAdminButton;
     SharedPreferences sharedPreferences;
+    String urlWeatherBourg;
+    int apiKey;
     public MenuFragment() {
         // Required empty public constructor
     }
@@ -42,6 +54,26 @@ public class MenuFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         // Inflate the layout for this fragment
+        final ConnectivityManager connectivityManager = (ConnectivityManager)getContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+        final NetworkInfo ni = connectivityManager.getActiveNetworkInfo();
+
+        // TODO : Finish Weather. get is ok
+        if (ni != null && ni.isConnectedOrConnecting()) {
+            Log.i("MenuFragment", "Network " + ni.getTypeName() + " connected");
+            WeatherApi api = WeatherApi.retrofit.create(WeatherApi.class);
+            Call weather = api.getWeather(3031009,getResources().getString(R.string.weather_key));
+            weather.enqueue(new Callback<String>() {
+                @Override
+                public void onResponse(Call<String> call, Response<String> response) {
+                    Log.d("MenuFragment", response.message()+" "+response.errorBody()+" "+response.body());
+                }
+
+                @Override
+                public void onFailure(Call<String> call, Throwable t) {
+                    Log.d("MenuFrgment",t.toString());
+                }
+            });
+        }
         retVal = inflater.inflate(R.layout.fragment_menu, container, false);
         connectionButton = (Button) retVal.findViewById(R.id.connectionButton);
         connectionButton.setOnClickListener(new View.OnClickListener() {
