@@ -1,15 +1,19 @@
 package com.example.alexy.tubtabbar.Fragments;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.alexy.tubtabbar.Activities.Connection;
 import com.example.alexy.tubtabbar.R;
@@ -18,7 +22,7 @@ import static android.content.Context.MODE_PRIVATE;
 public class MenuFragment extends Fragment {
 
     private View retVal = null;
-    private Button connectionButton;
+    private Button connectionButton, connectionAdminButton;
     SharedPreferences sharedPreferences;
     public MenuFragment() {
         // Required empty public constructor
@@ -46,6 +50,52 @@ public class MenuFragment extends Fragment {
                 startActivityForResult(new Intent(getContext(), Connection.class), 1);
             }
         });
+        connectionAdminButton = (Button) retVal.findViewById(R.id.connectionAdminButton);
+        if (isFacebookConnected()) {
+            connectionAdminButton.setVisibility(View.INVISIBLE);
+        }
+        else {
+            connectionAdminButton.setVisibility(View.VISIBLE);
+        }
+        connectionAdminButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder alert = new AlertDialog.Builder(getContext());
+
+                alert.setTitle("Mot de passe Super Admin");
+
+// Set an EditText view to get user input
+                final EditText input = new EditText(getContext());
+                alert.setView(input);
+
+                alert.setPositiveButton("Valider", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int whichButton) {
+                        String value = input.getText().toString();
+                        if (value.equals("tub2017")){
+                            connectionAdminButton.setClickable(false);
+                            connectionAdminButton.setText("Connecté en super Admin");
+                            sharedPreferences = getContext().getSharedPreferences("PREF", MODE_PRIVATE);
+                            sharedPreferences
+                                    .edit()
+                                    .putBoolean("isConnectedAdmin", true)
+                                    .apply();
+
+                        }
+                        else {
+                            Toast.makeText(getContext(),"Mauvais mot de passe", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
+
+                alert.setNegativeButton("Retour", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int whichButton) {
+                        // Canceled.
+                    }
+                });
+
+                alert.show();
+            }
+        });
         updateView();
         return retVal;
     }
@@ -59,8 +109,7 @@ public class MenuFragment extends Fragment {
     private boolean isFacebookConnected() {
         sharedPreferences = getActivity().getSharedPreferences("PREF", MODE_PRIVATE);
         if (sharedPreferences.contains("isConnected")) {
-            Boolean isConnected = sharedPreferences.getBoolean("isConnected", false);
-            return isConnected;
+            return sharedPreferences.getBoolean("isConnected", false);
         }
         return false;
     }
@@ -80,6 +129,12 @@ public class MenuFragment extends Fragment {
         }
         else {
             connectionButton.setText("Je veux me connecter");
+        }
+        if (isFacebookConnected()) {
+            connectionAdminButton.setVisibility(View.INVISIBLE);
+        }
+        else {
+            connectionAdminButton.setVisibility(View.VISIBLE);
         }
     }
 

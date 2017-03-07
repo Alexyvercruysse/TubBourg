@@ -139,7 +139,7 @@ public class Connection extends AppCompatActivity {
             sharedPreferences
                         .edit()
                         .putBoolean("isConnected", true)
-                        .putString("facebookName", name) // FIXME : The task is an async, so sometime, name is null.
+                        .putString("facebookName", name) // FIXME : The task is an async, so sometime, name is null. Not a fatal Error.
                         .apply();
 
         }

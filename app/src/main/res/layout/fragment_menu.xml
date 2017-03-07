@@ -31,4 +31,11 @@
         android:layout_height="wrap_content"
         android:id="@+id/connectionButton" />
 
+    <Button
+        android:text="Ou rentrer le mot de passe Admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/connectionAdminButton"
+        android:layout_marginTop="20dp" />
+
 </LinearLayout>
