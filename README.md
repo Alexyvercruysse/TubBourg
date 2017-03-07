@@ -3,8 +3,8 @@ Android application for the Tub' company of Bourg-en-Bresse
 
 ## Usage
 1. download, install and run the api at `https://github.com/VincentMazet/coursPhp`
-2. modify the ip configuration in the application project
-1. launch the app :D
+2. modify the ip configuration in the application project at `app/src/main/java/com/example/alexy/tubtabbar/Services/TubApi.java`
+3. launch the app :D
 
 ## Contributing
 1. Fork it!
