@@ -19,8 +19,11 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
+import java.util.Random;
 
 /**
  * Created by Alexy on 02/11/2016.
@@ -45,12 +48,14 @@ public class Utilities {
 
     //Find the next hour of stop
     public static String getNextPassageFromNow(List<Hour> listhour){
+
         String result = "Pas d'horraire";
 
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH:mm");
 
         long minDiff = -1;
-        long currentTime = new Date().getTime();
+        Date now = new Date();
+        long currentTime = now.getTime();
         Date minDate = null;
 
         for(Hour hour : listhour){

@@ -8,8 +8,10 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ListAdapter;
 import android.widget.ListView;
 
 import com.example.alexy.tubtabbar.Activities.LineMap;
@@ -44,7 +46,6 @@ public class LineFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         LineRepository lineRepository = new LineRepositoryImpl();
-        Log.wtf("Test", lineRepository.listLines().size() + "");
 
         retVal = inflater.inflate(R.layout.fragment_line, container, false);
         listLine = (ListView) retVal.findViewById(R.id.listLigne);
@@ -54,6 +55,7 @@ public class LineFragment extends Fragment {
         for(Line line : lineRepository.listLines()){
             listNameLine.add(line.getName());
         }
+
         //Add all the names of the lines in a listView
         listLine.setAdapter(new ArrayAdapter(getActivity(), android.R.layout.simple_list_item_1, listNameLine));
 
