@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_bff3eb38f71467a35476e67f771d37e55d3315c9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.gradle/caches/modules-2/files-2.1/com.github.Raizlabs.DBFlow/dbflow-core/4.0.0-beta2/5e4cc4f3b5bcaa12a8053b4a1ecf0c738821a91b/dbflow-core-4.0.0-beta2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5e4cc4f3b5bcaa12a8053b4a1ecf0c738821a91b">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/dbflow-core-4.0.0-beta2_87fccb334caef09839395a4e1f3c3b6154d03e72.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.android/build-cache/887c0c58225c4e35f9d97a22ffafe83e9b9764a5/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="eccaaa9ffa6bb4bfbd2e870f01aaf69655d353be">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/classes_d0ba99ce448b19710b4598cb57573f3370fbd2ee.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.android/build-cache/96d378f5c4ba1cdcdf002396bf7d780340bbc4eb/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/classes_64f2f6d9ac6d42b1adbbb110a5a4d61650018713.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.android/build-cache/024de74c16e3dea810659720d6945dabdc5d73d9/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5e497d60f0cb6ce87c458ac5420a46d0fed49bd0">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/classes_a56bc9c17cfe2db87f4d6bc537a06eef69a75fe8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.android/build-cache/7cc9d18c6f1f34d05b2ebe43a393f79ef53f09f4/output/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_eba577c782cf35b039f791f39bc3bcac2a6bb3b5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.7.3/1499b854ae9f370409792db5af1b552dc7d9682f/jackson-core-2.7.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1499b854ae9f370409792db5af1b552dc7d9682f">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/jackson-core-2.7.3_db72c09192e8666ff9713e3730046899897e7f7a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.android/build-cache/27dd46daacfe16768912916b353278ed5e594b58/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/classes_da2221ffeda13fc7cdff8f8babad31af5f56fc17.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.android/build-cache/7cc9d18c6f1f34d05b2ebe43a393f79ef53f09f4/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/classes_9cac5c3ba50a58fdb55f92354c964adddd3c7580.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.android/build-cache/ed8b12b9249e438d0a640cd9020f2b267551483b/output/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_b3a4346faef2f9f5fcba74740495aac6acb070e4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/gson-2.7_6591e6094ee212519bf9ed46866a671f2e581574.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.android/build-cache/ed8b12b9249e438d0a640cd9020f2b267551483b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/classes_be31bf08660d8d672b84aedec1fd37ce31ddc789.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-applinks/1.4.0/8ad21bf21784dacce5f2043afb97218cc377e835/bolts-applinks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/bolts-applinks-1.4.0_f62080dbcba64cc65fa82a22d2d1c22d98930be1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.android/build-cache/f17923b47774479b7c55ab9d70408c049e9502af/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26674000177e45447a0326a6ad84612761199a13">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/classes_ed54ef3927dd795655f2809d285a01e17230bff4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.android/build-cache/f17923b47774479b7c55ab9d70408c049e9502af/output/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_468f358952f745c334556c55cf5fef47c7f9e06f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.android/build-cache/9fedd7f8e2b3d41ddc7d4da5821314de95288fe8/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0c6d948e6cb9ea6f535d175fb61ba2930719c0e9">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/classes_4ebbee5a5a2adca70f1e452c110a7465e3afbec3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.android/build-cache/094ac5f4fc81592d3e342fe39e405c1f26cef27d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/classes_5e616c4507d34f8f73903c9a7e09037a8d955acb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.gradle/caches/modules-2/files-2.1/com.loopj.android/android-async-http/1.4.9/386a4339ffe52d5d63e80f9bed8d2b1d1a418249/android-async-http-1.4.9.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="386a4339ffe52d5d63e80f9bed8d2b1d1a418249">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/android-async-http-1.4.9_5a8c4eb022b3c816071cac4bbb7587c5f58fb682.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.android/build-cache/f62887b67ad8900bc3bc328e38837ce675188026/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26384be22ddc74cfe197ebda9edbc7d1fd8bd537">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/classes_1c6b904ac170b6b2212ab2e477324dacbf437800.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.android/build-cache/ac6e930403bc639b4b72c9dcd48143acfef8ed00/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/classes_4dc0878c1c8adc5418ca8f30bee888eda1de7c1e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.android/build-cache/5022506ab22d2b64b93225057b0a84d8504279c0/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8a372c4191f80489770a231f7be4820b204b886a">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/classes_b4de0828aadab8ac85307ad6fb5a5cdcd6814c8a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.android/build-cache/e632223991ee1bac68776bf5fe2a2d04dc24f581/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f8db47be01cbe8cfa81e9cecce5ff1371ed1ad95">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/classes_c6fa7a2b2b475751d803e1c1c7b1df470daeddf8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.android/build-cache/fe884c4a6e88081b315d75cbb1c219325da3af07/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="cb2ef781533c3f11c4e80341cbaebad275c66586">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/classes_e93757d58d43d49962113e244c573edbf3ce0c83.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.android/build-cache/c1fb7c3bdcbfe5fed5d96a999a6121253f8b1751/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="af7582c6b327449c6d32518e6a10307860b7b5d6">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/classes_59619bc7ddfd24a17ff95902491b38ff27565422.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.android/build-cache/094ac5f4fc81592d3e342fe39e405c1f26cef27d/output/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_b3b0438ef9b81201acdd901985bce513837f0fe9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.android/build-cache/6dbbabf40896fb019ca210cc1e6da24558b069cc/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4a36600281a648769411ef642c331851732bf29e">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/classes_255a3a2e186debf4e85a5dcaf86575292af4e2ad.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.android/build-cache/ac6e930403bc639b4b72c9dcd48143acfef8ed00/output/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_76471c97bd6a12ffab4b5bc93f236dc3428d4f30.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.android/build-cache/9a39f26761600892b6354337cc6c3b05f198a164/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/classes_832a40e7d144f7e8c241cd185d5a4cf5b5e34ca8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.android/build-cache/de29452d3d619c0c8deb505fa9d1cd3b78eee839/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="62ff84124b89177abc0c27f3e38c9732f2d41617">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/classes_0f31c91e473096a56a96a7412f0cb9520540ccde.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.7.3/f12e6cd05cbaecd74d16e685d45b627732939e42/jackson-databind-2.7.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f12e6cd05cbaecd74d16e685d45b627732939e42">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/jackson-databind-2.7.3_f3923c6c998300fc7ba3ab19048d3e131ab5cfcb.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/iem/Documents/git/TubBourg/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_2c9a92a12a980099a7b7e5f11d25545c897c644e/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.7.3/e250c11c1329c7b6b62442a9743befad78be553c/jackson-annotations-2.7.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e250c11c1329c7b6b62442a9743befad78be553c">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/jackson-annotations-2.7.3_dc091a311b66866f63b774f62c80411dca450b3a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.android/build-cache/2e751b1179192e30c124e06936983a7690ee6aa2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="10f85341d6f1981bb965100870155d8e65a1edcc">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/classes_64b43f61940e8dce3f4a1d54607e1caeb746a693.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.android/build-cache/3d5825635b5c04aedb3a3a7060e2cb7daa1655ee/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/classes_bdc082661180da14aa44f9382b65483eadb0925a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.android/build-cache/84fa60d761db6447da146cf1fa61d0faa12d97af/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="94ba691efc31bf53264db0716d9c9ec03843ea31">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/classes_f3c6c26cd95a01e66e31255f7659973acf180f57.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.3.0/2b802460eea20f8f2ad9c08c74e0f14718e88aa9/okhttp-3.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2b802460eea20f8f2ad9c08c74e0f14718e88aa9">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/okhttp-3.3.0_c80cb5e639a03fd974225828a5360770f580514c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.gradle/caches/modules-2/files-2.1/cz.msebera.android/httpclient/4.3.6/526a9f794eab830eae4f23a62c572878b3f491ab/httpclient-4.3.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="526a9f794eab830eae4f23a62c572878b3f491ab">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/httpclient-4.3.6_f9fea91b123c531545565fba184f80adde19db7c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.1.0/aa557d71ead91cbf26e0c316a0f593d168303309/converter-gson-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/converter-gson-2.1.0_16627a05c804f7d0b6aaa2c288989ff8ed3a0806.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.android/build-cache/d919d3a80448801332cee54590ed5528dd9c8924/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6f57b76211a1d7b0c1f18873af59faad95664681">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/classes_810fae5b48549a12e4787c92a27bfdf892ee501a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.0/2de7cd8b95b7021b1d597f049bcb422055119f2c/retrofit-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/retrofit-2.1.0_44d7826dd788effc37f46552af77208e220b5ca9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.0/support-annotations-25.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/support-annotations-25.0.0_5c050f617c7812614944ddd6460cf60e95fdec2b.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/iem/Documents/git/TubBourg/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="80960deafd5d2697d3aa41ae04695da012e74066">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_c6265151409f358591384f4380adb673fca7e6a0/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/iem/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.8.0/5ea7af56cc7c567ed9856d99efb30740e9b17ff/okio-1.8.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/okio-1.8.0_426e495612e73bef3a8feb36306818ee14d6d831.jar" />
+    </item>
+
+</items>

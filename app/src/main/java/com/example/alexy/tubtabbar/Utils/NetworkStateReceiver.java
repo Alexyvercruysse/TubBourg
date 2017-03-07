@@ -83,7 +83,6 @@ public class NetworkStateReceiver extends BroadcastReceiver {
                                     t.printStackTrace();
                                 }
                             });
-
                 Log.i(TAG, "BDD " + ni.getTypeName() + " updated");
             } else if (intent.getBooleanExtra(ConnectivityManager.EXTRA_NO_CONNECTIVITY, Boolean.FALSE)) {
                 Log.d(TAG, "There's no network connectivity");

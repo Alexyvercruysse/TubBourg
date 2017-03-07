@@ -47,15 +47,21 @@ public class Utilities {
 
 
     //Find the next hour of stop
-    public static String getNextPassageFromNow(List<Hour> listhour){
+    public static String getNextPassageFromDate(List<Hour> listhour, Date dateParam){
 
         String result = "Pas d'horraire";
 
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH:mm");
 
-        long minDiff = -1;
-        Date now = new Date();
-        long currentTime = now.getTime();
+        Date now = dateParam;
+        if(now == null){
+            now = new Date();
+            try {
+                now = simpleDateFormat.parse(simpleDateFormat.format(now));
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+        }
         Date minDate = null;
 
         for(Hour hour : listhour){
@@ -66,10 +72,13 @@ public class Utilities {
                 e.printStackTrace();
             }
 
-            if(date != null){
-                long diff = Math.abs(currentTime - date.getTime());
-                if ((minDiff == -1) || (diff < minDiff)) {
-                    minDiff = diff;
+            if(date != null && date.compareTo(now) >= 0) {
+                if(minDate != null){
+                    int diffDate = date.compareTo(minDate);
+                    if(diffDate < 0) {
+                        minDate = date;
+                    }
+                }else{
                     minDate = date;
                 }
             }
