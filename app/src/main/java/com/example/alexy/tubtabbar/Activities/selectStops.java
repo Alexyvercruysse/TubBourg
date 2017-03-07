@@ -30,7 +30,6 @@ import java.util.List;
 
 public class selectStops extends AppCompatActivity {
     MapView mapView;
-    Button btn8;
     String arret;
     private StopRepository stopRepository;
     private int idLine;
@@ -91,17 +90,6 @@ public class selectStops extends AppCompatActivity {
             }
         });
         mapView.onResume();
-
-
-    }
-
-    public void arretIsSelect(View v) {
-
-        if (arret != null) {
-            finish();
-        } else {
-            Toast.makeText(this, "Pas d'arrêt sélectionné", Toast.LENGTH_SHORT).show();
-        }
     }
 
     @Override

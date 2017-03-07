@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
                 new String[]{Manifest.permission.ACCESS_FINE_LOCATION,Manifest.permission.INTERNET},
                 1);
 
-        // Adapat pager and toolbar
+        // Adapt pager and toolbar
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
@@ -90,8 +90,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

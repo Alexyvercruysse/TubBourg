@@ -38,16 +38,22 @@ public class stopHours extends AppCompatActivity {
         StopRepository stopRepository = new StopRepositoryImpl();
         HourRepository hourRepository = new HourRepositoryImpl();
 
-        //FIXME 999
-        int idLine = getIntent().getIntExtra("idLine", 999);
-        int idStop = getIntent().getIntExtra("idStop", 999);
+        int idLine = getIntent().getIntExtra("idLine", -1);
+        int idStop = getIntent().getIntExtra("idStop", -1);
 
          List<Hour> firstDirection = hourRepository.listHoursByDirectionStopAndLine(0, idStop, idLine);
          List<Hour> secondDirection = hourRepository.listHoursByDirectionStopAndLine(1, idStop, idLine);
 
-
-         tvDirection1.setText("Direction : " + stopRepository.getStopById(firstDirection.get(0).getIdEndStop()).getName() + "\n Prochain passage : " + Utilities.getNextPassageFromDate(firstDirection, null) + "\n");
-         tvDirection2.setText("Direction : " + stopRepository.getStopById(secondDirection.get(0).getIdEndStop()).getName()  + "\n Prochain passage : " + Utilities.getNextPassageFromDate(secondDirection, null) + "\n");
+        if(firstDirection.size() >= 1){
+            tvDirection1.setText("Direction : " + stopRepository.getStopById(firstDirection.get(0).getIdEndStop()).getName() + "\n Prochain passage : " + Utilities.getNextPassageFromDate(firstDirection, null) + "\n");
+        }else{
+            tvDirection1.setText("Direction: inconnue");
+        }
+        if(secondDirection.size() >= 1){
+            tvDirection2.setText("Direction : " + stopRepository.getStopById(secondDirection.get(0).getIdEndStop()).getName()  + "\n Prochain passage : " + Utilities.getNextPassageFromDate(secondDirection, null) + "\n");
+        }else{
+            tvDirection2.setText("Direction: inconnue");
+        }
          tvStop.setText("Arrêt : " + getIntent().getStringExtra("nameStop"));
 
 

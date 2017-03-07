@@ -83,7 +83,7 @@ public class TravelFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 if (idLine == 0){
-                    Toast.makeText(getActivity(),"Selectionner le départ d'abord",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(),"Veuillez sélectionner l'arrêt de départ",Toast.LENGTH_SHORT).show();
                 }
                 else {
                     Intent myIntent = new Intent(getActivity(), selectStops.class);
@@ -145,7 +145,8 @@ public class TravelFragment extends Fragment {
                    idLine = lineRepository.getLineByName(strName).getId();
                     if (idLine != 21){
                         dialog.dismiss();
-                        Toast.makeText(getActivity(),"Cette ligne n'est pas encore disponible",Toast.LENGTH_SHORT).show();
+                        idLine = 0;
+                        Toast.makeText(getActivity(),"Cette fonctionnalitée n'est pas encore disponible pour cette ligne",Toast.LENGTH_SHORT).show();
                     }
                     else {
                         Intent myIntent = new Intent(getActivity(), selectStops.class);
