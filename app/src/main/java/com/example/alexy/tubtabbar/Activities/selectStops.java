@@ -9,14 +9,22 @@ import android.widget.Toast;
 import com.example.alexy.tubtabbar.Entities.Line;
 import com.example.alexy.tubtabbar.Entities.Stop;
 import com.example.alexy.tubtabbar.R;
+import com.example.alexy.tubtabbar.Repositories.LineRepository;
+import com.example.alexy.tubtabbar.Repositories.LineRepositoryImpl;
+import com.example.alexy.tubtabbar.Repositories.StopRepository;
+import com.example.alexy.tubtabbar.Repositories.StopRepositoryImpl;
 import com.example.alexy.tubtabbar.Utils.Utilities;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.maps.android.kml.KmlLayer;
 
+import org.xmlpull.v1.XmlPullParserException;
+
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,44 +32,49 @@ public class selectStops extends AppCompatActivity {
     MapView mapView;
     Button btn8;
     String arret;
-    Stop gare;
-    Stop vicaire;
-    Stop chariteUniversitaire;
-    Line ligne5;
-    List<Stop> ls;
-    KmlLayer layer = null;
+    private StopRepository stopRepository;
+    private int idLine;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_stops);
-        // Création d'un jeu d'essai en brut
-        gare = new Stop();
-        vicaire = new Stop();
-        chariteUniversitaire = new Stop();
-        ligne5 = new Line();
-        ligne5.setId(5);
-        ligne5.setName("Ligne 5");
-        ligne5.setDescription("La description de la ligne 5");
-       // gare.setId(1);gare.setName("Gare");gare.setDescription("Gare des bus");gare.setGpsCoord(46.207337, 5.227646);
-      //  vicaire.setId(2);vicaire.setName("Vicaire");vicaire.setDescription("Arrêt Vicaire");vicaire.setGpsCoord(46.207929, 5.224553);
-       // chariteUniversitaire.setId(3);chariteUniversitaire.setName("Charité Universitaire");chariteUniversitaire.setDescription("Arrêt Charité Universitaire");chariteUniversitaire.setGpsCoord(46.207634, 5.219873);
-        ls = new ArrayList<>();
-        ls.add(gare);
-        ls.add(vicaire);
-        ls.add(chariteUniversitaire);
-
+        idLine = getIntent().getIntExtra("idLine",0);
         mapView = (MapView) findViewById(R.id.mapView2);
         mapView.onCreate(savedInstanceState);
-
+        stopRepository = new StopRepositoryImpl();
 
         mapView.getMapAsync(new OnMapReadyCallback() {
             @Override
             public void onMapReady(GoogleMap map) {
 
-            //    map.moveCamera(CameraUpdateFactory.newLatLngZoom(gare.getGpsCoord(), 13));
-                map.addMarker(Utilities.addStopToMarker(vicaire));
-                map.addMarker(Utilities.addStopToMarker(gare));
-                map.addMarker(Utilities.addStopToMarker(chariteUniversitaire));
+                if(idLine != 0) {
+                    KmlLayer layer = null;
+                    try {
+                        layer = new KmlLayer(map, R.raw.class.getField("line"+idLine).getInt(0),getApplicationContext());
+                    } catch (NoSuchFieldException e) {
+                        e.printStackTrace();
+                    } catch (IllegalAccessException e) {
+                        e.printStackTrace();
+                    } catch (XmlPullParserException e) {
+                        e.printStackTrace();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    try {
+                        layer.addLayerToMap();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    } catch (XmlPullParserException e) {
+                        e.printStackTrace();
+                    }
+                    for (Stop stop : stopRepository.listStopByIdLine(idLine)) {
+                        map.addMarker(Utilities.addStopToMarker(stop));
+                    }
+                }
+                else {
+                    finish();
+                }
+                map.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(stopRepository.listStops().get(0).getLatitude(),stopRepository.listStops().get(0).getLongitude()),13));
                 map.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
                     @Override
                     public boolean onMarkerClick(Marker marker) {

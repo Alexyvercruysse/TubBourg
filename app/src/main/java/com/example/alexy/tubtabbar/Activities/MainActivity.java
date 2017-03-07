@@ -149,7 +149,7 @@ public class MainActivity extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "Menu";
+                    return "Mon Compte";
                 case 1:
                     return "Ligne";
                 case 2:
