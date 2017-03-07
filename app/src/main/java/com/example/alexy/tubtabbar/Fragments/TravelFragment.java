@@ -99,13 +99,17 @@ public class TravelFragment extends Fragment {
         builderSingle.setAdapter(arrayAdapter, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                    
                    String strName = arrayAdapter.getItem(which);
                    idLine = lineRepository.getLineByName(strName).getId();
-                   Intent myIntent = new Intent(getActivity(), selectStops.class);
-                   myIntent.putExtra("idLine", idLine);
-                   startActivityForResult(myIntent, STOP_REQUEST);
-
+                    if (idLine != 21){
+                        dialog.dismiss();
+                        Toast.makeText(getActivity(),"Cette ligne n'est pas encore disponible",Toast.LENGTH_SHORT).show();
+                    }
+                    else {
+                        Intent myIntent = new Intent(getActivity(), selectStops.class);
+                        myIntent.putExtra("idLine", idLine);
+                        startActivityForResult(myIntent, STOP_REQUEST);
+                    }
             }
         });
         builderSingle.show();

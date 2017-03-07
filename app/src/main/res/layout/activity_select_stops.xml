@@ -10,14 +10,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical">
 
-    <Button
-        android:text="Pas d'arrêt sélectionné"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/button8"
-        android:layout_weight="0"
-        android:onClick="arretIsSelect" />
-
     <com.google.android.gms.maps.MapView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

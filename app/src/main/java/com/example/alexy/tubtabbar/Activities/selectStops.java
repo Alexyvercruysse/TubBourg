@@ -79,15 +79,18 @@ public class selectStops extends AppCompatActivity {
                     @Override
                     public boolean onMarkerClick(Marker marker) {
                         arret = marker.getTitle();
-                        btn8.setText("Arrêt : "+arret);
                         return false;
                     }
                 });
-
+                map.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
+                    @Override
+                    public void onInfoWindowClick(Marker marker) {
+                        finish();
+                    }
+                });
             }
         });
         mapView.onResume();
-        btn8 = (Button) findViewById(R.id.button8);
 
 
     }
