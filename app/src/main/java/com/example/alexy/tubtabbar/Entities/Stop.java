@@ -1,14 +1,11 @@
 package com.example.alexy.tubtabbar.Entities;
 
 import com.example.alexy.tubtabbar.Repositories.TubDatabase;
-import com.google.android.gms.maps.model.LatLng;
 import com.raizlabs.android.dbflow.annotation.Column;
 import com.raizlabs.android.dbflow.annotation.PrimaryKey;
 import com.raizlabs.android.dbflow.annotation.Table;
-import com.raizlabs.android.dbflow.sql.language.property.DoubleProperty;
 import com.raizlabs.android.dbflow.structure.BaseModel;
 
-import java.util.Date;
 
 /**
  * Created by iem on 18/10/2016.

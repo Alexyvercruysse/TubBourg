@@ -15,37 +15,44 @@
             android:orientation="vertical" >
 
             <Button
-                android:text="Lieu de départ"
+                android:id="@+id/buttonTimePicker"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:id="@+id/buttonStopStart"/>
+                android:text="Heure de départ" />
 
             <Button
-                android:text="Lieu d'arrivée"
+                android:id="@+id/buttonStopStart"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:id="@+id/buttonStopEnd" />
-
-            <TimePicker
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/timePickerTravel" />
+                android:text="Lieu de départ" />
 
             <Button
-                android:text="GO"
+                android:id="@+id/buttonStopEnd"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:id="@+id/buttonRun" />
+                android:text="Lieu d'arrivée" />
+
+            <Button
+                android:id="@+id/buttonRun"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="GO" />
 
             <TextView
-                android:text=""
+                android:id="@+id/result"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/result"
-                android:gravity="center" />
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="24sp" />
         </LinearLayout>
     </ScrollView>
 

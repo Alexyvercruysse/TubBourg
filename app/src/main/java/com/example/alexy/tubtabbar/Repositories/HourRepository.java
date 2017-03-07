@@ -1,7 +1,6 @@
 package com.example.alexy.tubtabbar.Repositories;
 
 import com.example.alexy.tubtabbar.Entities.Hour;
-import com.example.alexy.tubtabbar.Entities.Stop;
 
 import java.util.List;
 

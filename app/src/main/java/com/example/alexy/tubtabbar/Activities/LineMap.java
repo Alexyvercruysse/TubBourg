@@ -73,13 +73,13 @@ public class LineMap extends AppCompatActivity {
                     });
                     map.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(BOURG_LATITUDE, BOURG_LONGITUDE), 13));
                 } catch (XmlPullParserException e) {
-                    e.printStackTrace();
+                    throw new RuntimeException(e.getMessage());
                 } catch (IOException e) {
-                    e.printStackTrace();
+                    throw new RuntimeException(e.getMessage());
                 } catch (NoSuchFieldException e) {
-                    e.printStackTrace();
+                    throw new RuntimeException(e.getMessage());
                 } catch (IllegalAccessException e) {
-                    e.printStackTrace();
+                    throw new RuntimeException(e.getMessage());
                 }
             }
 

@@ -1,15 +1,10 @@
 package com.example.alexy.tubtabbar.Entities;
 import com.example.alexy.tubtabbar.Repositories.TubDatabase;
-import com.google.gson.annotations.SerializedName;
 import com.raizlabs.android.dbflow.annotation.Column;
 import com.raizlabs.android.dbflow.annotation.PrimaryKey;
 import com.raizlabs.android.dbflow.annotation.Table;
 import com.raizlabs.android.dbflow.structure.BaseModel;
 
-import java.util.Date;
-import java.util.List;
-
-import static android.R.id.list;
 
 /**
  * Created by iem on 18/10/2016.

@@ -4,11 +4,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
@@ -21,9 +19,7 @@ import com.example.alexy.tubtabbar.Repositories.LineRepository;
 import com.example.alexy.tubtabbar.Repositories.LineRepositoryImpl;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class LineFragment extends Fragment {
 
@@ -40,17 +36,13 @@ public class LineFragment extends Fragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-
-
         retVal = inflater.inflate(R.layout.fragment_line, container, false);
         listLine = (ListView) retVal.findViewById(R.id.listLigne);
-
 
         return retVal;
     }
@@ -60,8 +52,6 @@ public class LineFragment extends Fragment {
         super.onResume();
 
         LineRepository lineRepository = new LineRepositoryImpl();
-
-
         List <String> listNameLine = new ArrayList<>();
 
         for(Line line : lineRepository.listLines()){
@@ -78,7 +68,6 @@ public class LineFragment extends Fragment {
                 showLigneHorraire( (String) listLine.getItemAtPosition(i));
             }
         });
-
     }
 
     private void showLigneHorraire(String nameLine){
@@ -86,7 +75,6 @@ public class LineFragment extends Fragment {
                 intent.putExtra("nameLine", nameLine);
                 startActivity(intent);
     }
-
 
     @Override
     public void onAttach(Context context) {

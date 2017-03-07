@@ -38,6 +38,7 @@ public class Connection extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // Facebook make him depreciated but there is no other way.
         FacebookSdk.sdkInitialize(getApplicationContext());
         callbackManager = CallbackManager.Factory.create();
         setContentView(R.layout.activity_connection);
@@ -51,15 +52,11 @@ public class Connection extends AppCompatActivity {
                 Log.d("KeyHash:", Base64.encodeToString(md.digest(), Base64.DEFAULT));
             }
         } catch (PackageManager.NameNotFoundException e) {
-
+            throw new RuntimeException(e.getMessage());
         } catch (NoSuchAlgorithmException e) {
-
-
+            throw new RuntimeException(e.getMessage());
         }
         sharedPreferences = getBaseContext().getSharedPreferences("PREF", MODE_PRIVATE);
-        if (sharedPreferences.contains("isConnected")) {
-            Boolean isConnected = sharedPreferences.getBoolean("isConnected", false);
-        }
         profilePictureView = (ProfilePictureView) findViewById(R.id.image);
         if (isLoggedIn()){
             profilePictureView.setVisibility(View.VISIBLE);
@@ -71,7 +68,7 @@ public class Connection extends AppCompatActivity {
         loginButton.setReadPermissions(Arrays.asList(
                 "public_profile"));
         callbackManager = CallbackManager.Factory.create();
-        AccessTokenTracker accessTokenTracker = new AccessTokenTracker() {
+        new AccessTokenTracker() {
             @Override
             protected void onCurrentAccessTokenChanged(
                     AccessToken oldAccessToken,
@@ -114,9 +111,6 @@ public class Connection extends AppCompatActivity {
                     new GraphRequest.GraphJSONObjectCallback() {
                         @Override
                         public void onCompleted(JSONObject object, GraphResponse response) {
-                            Log.v("LoginActivity", response.toString());
-
-                            // Application code
                             try {
                                 name = object.getString("name");
                                 profilePictureView.setProfileId(object.getString("id"));

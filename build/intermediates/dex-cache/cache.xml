@@ -183,6 +183,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/iem/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/picasso-2.5.2_1528f4b9b1a1ef8bd5c5cf9c1ee2aec449745251.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/iem/.android/build-cache/5022506ab22d2b64b93225057b0a84d8504279c0/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -270,15 +279,6 @@
         revision="25.0.0"
         sha1="f12e6cd05cbaecd74d16e685d45b627732939e42">
         <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/jackson-databind-2.7.3_f3923c6c998300fc7ba3ab19048d3e131ab5cfcb.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/iem/Documents/git/TubBourg/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
-        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_2c9a92a12a980099a7b7e5f11d25545c897c644e/classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -369,15 +369,6 @@
         revision="25.0.0"
         sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
         <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/pre-dexed/debug/support-annotations-25.0.0_5c050f617c7812614944ddd6460cf60e95fdec2b.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/iem/Documents/git/TubBourg/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="80960deafd5d2697d3aa41ae04695da012e74066">
-        <dex dex="/Users/iem/Documents/git/TubBourg/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_c6265151409f358591384f4380adb673fca7e6a0/classes.dex" />
     </item>
     <item
         is-multidex="false"

@@ -15,17 +15,19 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.alexy.tubtabbar.Activities.Connection;
+import com.example.alexy.tubtabbar.Entities.WeatherObject;
 import com.example.alexy.tubtabbar.R;
-import com.example.alexy.tubtabbar.Services.TubApi;
 import com.example.alexy.tubtabbar.Services.WeatherApi;
+import com.squareup.picasso.Picasso;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import retrofit2.http.GET;
 
 import static android.content.Context.MODE_PRIVATE;
 
@@ -33,9 +35,10 @@ public class MenuFragment extends Fragment {
 
     private View retVal = null;
     private Button connectionButton, connectionAdminButton;
+    private TextView resultWeather;
+    private ImageView imageViewWeather;
+
     SharedPreferences sharedPreferences;
-    String urlWeatherBourg;
-    int apiKey;
     public MenuFragment() {
         // Required empty public constructor
     }
@@ -57,24 +60,42 @@ public class MenuFragment extends Fragment {
         final ConnectivityManager connectivityManager = (ConnectivityManager)getContext().getSystemService(Context.CONNECTIVITY_SERVICE);
         final NetworkInfo ni = connectivityManager.getActiveNetworkInfo();
 
-        // TODO : Finish Weather. get is ok
+        retVal = inflater.inflate(R.layout.fragment_menu, container, false);
+
+        resultWeather = (TextView) retVal.findViewById(R.id.weatherTextView);
+        imageViewWeather = (ImageView) retVal.findViewById(R.id.imageViewWeather);
         if (ni != null && ni.isConnectedOrConnecting()) {
             Log.i("MenuFragment", "Network " + ni.getTypeName() + " connected");
             WeatherApi api = WeatherApi.retrofit.create(WeatherApi.class);
-            Call weather = api.getWeather(3031009,getResources().getString(R.string.weather_key));
-            weather.enqueue(new Callback<String>() {
+            Call weather = api.getWeatherObject(3031009,getResources().getString(R.string.weather_key));
+            Log.d("HTTPGEt", api.getWeatherObject(3031009,getResources().getString(R.string.weather_key)).request().url().toString());
+            weather.enqueue(new Callback<WeatherObject>() {
                 @Override
-                public void onResponse(Call<String> call, Response<String> response) {
-                    Log.d("MenuFragment", response.message()+" "+response.errorBody()+" "+response.body());
+                public void onResponse(Call<WeatherObject> call, Response<WeatherObject> response) {
+                    if (response.body() == null) {
+
+                    }
+                    else {
+                        resultWeather.setText(response.body().getName() + " actuellement : " + response.body().getMain().getTemp() + "°C");
+                        Log.d("MenuFragment", "hey response" + " " + response.body().getWeather().get(0).getIcon());
+                        imageViewWeather.setVisibility(View.VISIBLE);
+                        Picasso.with(getActivity())
+                                .load("http://openweathermap.org/img/w/" + response.body().getWeather().get(0).getIcon() + ".png")
+                                .into(imageViewWeather);
+                    }
                 }
 
                 @Override
-                public void onFailure(Call<String> call, Throwable t) {
-                    Log.d("MenuFrgment",t.toString());
+                public void onFailure(Call<WeatherObject> call, Throwable t) {
+                    Log.d("MenuFragment","hey nope response"+t.getMessage());
                 }
             });
         }
-        retVal = inflater.inflate(R.layout.fragment_menu, container, false);
+        else {
+            resultWeather.setText("Connectez-vous à internet pour la météo.");
+
+        }
+
         connectionButton = (Button) retVal.findViewById(R.id.connectionButton);
         connectionButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -96,7 +117,7 @@ public class MenuFragment extends Fragment {
 
                 alert.setTitle("Mot de passe Super Admin");
 
-// Set an EditText view to get user input
+                // Set an EditText view to get user input
                 final EditText input = new EditText(getContext());
                 alert.setView(input);
 
@@ -160,7 +181,7 @@ public class MenuFragment extends Fragment {
             }
         }
         else {
-            connectionButton.setText("Je veux me connecter");
+            connectionButton.setText("Connexion avec Facebook");
         }
         if (isFacebookConnected()) {
             connectionAdminButton.setVisibility(View.INVISIBLE);
@@ -179,5 +200,4 @@ public class MenuFragment extends Fragment {
     public void onDetach() {
         super.onDetach();
     }
-
 }

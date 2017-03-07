@@ -27,6 +27,7 @@ public class MyApplication extends Application {
         // This instantiates DBFlow
         FlowManager.init(new FlowConfig.Builder(this).build());
 
+        //this instanciate the NetworkStateReceiver
         IntentFilter filter = new IntentFilter();
         filter.addAction("android.net.conn.CONNECTIVITY_CHANGE");
         NetworkStateReceiver receiver = new NetworkStateReceiver();

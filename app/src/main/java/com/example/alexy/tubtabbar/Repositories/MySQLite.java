@@ -6,18 +6,16 @@ import android.database.sqlite.SQLiteDatabase;
  * Created by iem on 18/10/2016.
  */
 
-        import android.content.Context;
-        import android.database.sqlite.SQLiteDatabase;
-        import android.database.sqlite.SQLiteException;
-        import android.database.sqlite.SQLiteOpenHelper;
-import android.util.Log;
+import android.content.Context;
+import android.database.sqlite.SQLiteException;
+import android.database.sqlite.SQLiteOpenHelper;
 import android.widget.Toast;
 
-        import java.io.File;
-        import java.io.FileOutputStream;
-        import java.io.IOException;
-        import java.io.InputStream;
-        import java.io.OutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 
 public class MySQLite extends SQLiteOpenHelper {
 
@@ -43,7 +41,6 @@ public class MySQLite extends SQLiteOpenHelper {
 
         // Si la bdd n'existe pas dans le dossier de l'app
         if (!checkdatabase()) {
-            Log.d("Test","test");
             // copy db de 'assets' vers DATABASE_PATH
             copydatabase();
         }
@@ -112,7 +109,6 @@ public class MySQLite extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         if (oldVersion < newVersion){
-            //Log.d("debug", "onUpgrade() : oldVersion=" + oldVersion + ",newVersion=" + newVersion);
             mycontext.deleteDatabase(DATABASE_NAME);
             copydatabase();
         }

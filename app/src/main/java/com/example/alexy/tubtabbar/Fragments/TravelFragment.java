@@ -1,5 +1,6 @@
 package com.example.alexy.tubtabbar.Fragments;
 
+import android.app.TimePickerDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -8,7 +9,6 @@ import android.os.Bundle;
 import android.support.annotation.RequiresApi;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
-import android.test.suitebuilder.TestMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,8 +31,6 @@ import com.example.alexy.tubtabbar.Repositories.StopRepository;
 import com.example.alexy.tubtabbar.Repositories.StopRepositoryImpl;
 import com.example.alexy.tubtabbar.Utils.Utilities;
 
-import org.w3c.dom.Text;
-
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -46,12 +44,14 @@ public class TravelFragment extends Fragment {
     static final int STOP_REQUEST = 0;
     static final int STOP_REQUEST_END = 1;
     private LineRepository lineRepository;
-    private Button buttonStart, buttonEnd, buttonRun;
+    private Button buttonStart, buttonEnd, buttonRun,buttonTimePicker;
     private TextView result;
-    private TimePicker timePicker;
     private View view;
     private int idLine;
     private Stop startStop, endStop;
+    private String startHour;
+    private SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH:mm");
+
     public TravelFragment() {
     }
 
@@ -71,12 +71,32 @@ public class TravelFragment extends Fragment {
                              Bundle savedInstanceState) {
         lineRepository = new LineRepositoryImpl();
         view = inflater.inflate( R.layout.fragment_travel, container, false );
-
+        buttonTimePicker = (Button) view.findViewById(R.id.buttonTimePicker);
         buttonStart = (Button) view.findViewById(R.id.buttonStopStart);
         buttonEnd = (Button) view.findViewById(R.id.buttonStopEnd);
         buttonRun = (Button) view.findViewById(R.id.buttonRun);
         result = (TextView) view.findViewById(R.id.result);
-        timePicker = (TimePicker) view.findViewById(R.id.timePickerTravel);
+
+        buttonTimePicker.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                final Calendar c = Calendar.getInstance();
+                int hour = c.get(Calendar.HOUR_OF_DAY);
+                int minute = c.get(Calendar.MINUTE);
+                TimePickerDialog timePickerDialog = new TimePickerDialog(getActivity(), new TimePickerDialog.OnTimeSetListener() {
+                    @Override
+                    public void onTimeSet(TimePicker timePicker, int i, int i1) {
+                        startHour = i+":"+i1;
+                        try {
+                            buttonTimePicker.setText("Heure : " + simpleDateFormat.format(simpleDateFormat.parse(startHour)));
+                        } catch (ParseException e) {
+                            throw new RuntimeException(e.getMessage());
+                        }
+                    }
+                }, hour, minute, true);
+                timePickerDialog.show();
+            }
+        });
 
         buttonStart.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -106,16 +126,15 @@ public class TravelFragment extends Fragment {
             public void onClick(View view) {
                 if(startStop != null && endStop != null){
                     HourRepository hourRepository = new HourRepositoryImpl();
-                    SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH:mm");
-
-
                     List<Hour> startHourList = hourRepository.listHoursByNameStop(startStop.getName());
-                    String date = timePicker.getHour() + ":" + timePicker.getMinute();
+
                     Date choosedDate = new Date();
                     try {
-                        choosedDate = simpleDateFormat.parse(date);
+                        if(startHour != null && !startHour.isEmpty()){
+                            choosedDate = simpleDateFormat.parse(startHour);
+                        }
                     } catch (ParseException e) {
-                        e.printStackTrace();
+                        throw new RuntimeException(e.getMessage());
                     }
 
                     String firstPassage = Utilities.getNextPassageFromDate(startHourList, choosedDate);
@@ -127,7 +146,7 @@ public class TravelFragment extends Fragment {
                     }
                     List<Hour> endHourList = hourRepository.listHoursByNameStop(endStop.getName());
                     String secondPassage = Utilities.getNextPassageFromDate(endHourList, firstDate);
-                    result.setText(String.format("arrêt %s - prochain passage : %s \n arrêt %s - prochain passage : %s",startStop.getName(), firstPassage, endStop.getName(), secondPassage));
+                    result.setText(String.format("Arrêt %s - prochain passage : %s \n \n Arrêt %s - prochain passage : %s",startStop.getName(), firstPassage, endStop.getName(), secondPassage));
                 } else {
                     Toast.makeText(getActivity(),"Veuillez sélectionner les arrêts",Toast.LENGTH_SHORT).show();
                 }
@@ -139,9 +158,8 @@ public class TravelFragment extends Fragment {
 
     private void launchDialog(){
         AlertDialog.Builder builderSingle = new AlertDialog.Builder(getActivity());
-        //builderSingle.setIcon(R.drawable.ic_launcher);
+        //builderSingle.setIcon(R.drawable.ic_launcher); TODO : Pour ajouter un icone
         builderSingle.setTitle("Ligne : ");
-
         final ArrayAdapter<String> arrayAdapter = new ArrayAdapter(getActivity(), android.R.layout.simple_list_item_1);
         for (Line line : lineRepository.listLines()){
             arrayAdapter.add(line.getName());
@@ -189,15 +207,18 @@ public class TravelFragment extends Fragment {
     public void onActivityResult(int requestCode, int resultCode, Intent data)
     {
         StopRepository stopRepository = new StopRepositoryImpl();
-        if (requestCode == STOP_REQUEST && resultCode == RESULT_OK)
-        {
-            buttonStart.setText("Départ : " + data.getStringExtra("result"));
-            startStop = stopRepository.getStopByName(data.getStringExtra("result"));
+        if (data.getStringExtra("result") != null){
+            if (requestCode == STOP_REQUEST && resultCode == RESULT_OK)
+            {
+                buttonStart.setText("Départ : " + data.getStringExtra("result"));
+                startStop = stopRepository.getStopByName(data.getStringExtra("result"));
+            }
+            if (requestCode == STOP_REQUEST_END && resultCode == RESULT_OK)
+            {
+                buttonEnd.setText("Arrivé : " + data.getStringExtra("result"));
+                endStop = stopRepository.getStopByName(data.getStringExtra("result"));
+            }
         }
-        if (requestCode == STOP_REQUEST_END && resultCode == RESULT_OK)
-        {
-            buttonEnd.setText("Arrivé : " + data.getStringExtra("result"));
-            endStop = stopRepository.getStopByName(data.getStringExtra("result"));
-        }
+
     }
 }

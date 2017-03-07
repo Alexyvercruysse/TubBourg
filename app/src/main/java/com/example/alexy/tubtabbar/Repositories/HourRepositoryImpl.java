@@ -27,13 +27,6 @@ public class HourRepositoryImpl implements HourRepository {
 
     @Override
     public List<Hour> listHoursByIdLine(int idLine) {
-        List<Hour> hours = new ArrayList<>();
-        hours = SQLite.select().from(Hour.class).queryList();
-        for(Hour hour : hours){
-            Log.d("ID STOP", hour.getIdStop() + "");
-            Log.d("ID LINE", hour.getIdLine() + "");
-
-        }
         return SQLite.select().from(Hour.class).where(Hour_Table.idLine.eq(idLine)).queryList();
     }
 

@@ -5,8 +5,6 @@ import com.raizlabs.android.dbflow.annotation.PrimaryKey;
 import com.raizlabs.android.dbflow.annotation.Table;
 import com.raizlabs.android.dbflow.structure.BaseModel;
 
-import java.util.Date;
-import java.util.List;
 
 /**
  * Created by iem on 18/10/2016.

@@ -1,10 +1,6 @@
 package com.example.alexy.tubtabbar.Activities;
 
 import android.Manifest;
-import android.content.Intent;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
-import android.content.pm.Signature;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -15,58 +11,22 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
-import android.util.Base64;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 
-import com.example.alexy.tubtabbar.Entities.Stop;
 import com.example.alexy.tubtabbar.Fragments.LineFragment;
 import com.example.alexy.tubtabbar.Fragments.MenuFragment;
 import com.example.alexy.tubtabbar.R;
 import com.example.alexy.tubtabbar.Fragments.TravelFragment;
-import com.example.alexy.tubtabbar.Repositories.LineRepository;
-import com.example.alexy.tubtabbar.Repositories.LineRepositoryImpl;
-import com.example.alexy.tubtabbar.Repositories.StopRepository;
-import com.example.alexy.tubtabbar.Repositories.StopRepositoryImpl;
-import com.example.alexy.tubtabbar.Services.HttpService;
-import com.facebook.AccessToken;
-import com.facebook.CallbackManager;
-import com.facebook.FacebookSdk;
-import com.facebook.GraphRequest;
-import com.facebook.GraphResponse;
-import com.facebook.login.widget.LoginButton;
-import com.facebook.login.widget.ProfilePictureView;
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.raizlabs.android.dbflow.sql.language.SQLite;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.BufferedInputStream;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URI;
-import java.net.URL;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.util.Arrays;
-import java.util.List;
-
-import static com.facebook.FacebookSdk.getApplicationContext;
 
 public class MainActivity extends AppCompatActivity {
 
     private SectionsPagerAdapter mSectionsPagerAdapter;
     private ViewPager mViewPager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -87,8 +47,6 @@ public class MainActivity extends AppCompatActivity {
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
-
-
     }
 
     @Override
@@ -156,6 +114,4 @@ public class MainActivity extends AppCompatActivity {
             return null;
         }
     }
-
-
 }

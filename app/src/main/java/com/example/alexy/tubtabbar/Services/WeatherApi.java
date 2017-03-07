@@ -1,18 +1,11 @@
 package com.example.alexy.tubtabbar.Services;
 
-import com.example.alexy.tubtabbar.Entities.Hour;
-import com.example.alexy.tubtabbar.Entities.Line;
-import com.example.alexy.tubtabbar.Entities.Stop;
-import com.example.alexy.tubtabbar.R;
-
-import java.util.List;
-import java.util.Map;
+import com.example.alexy.tubtabbar.Entities.WeatherObject;
 
 import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.GET;
-import retrofit2.http.Path;
 import retrofit2.http.Query;
 
 /**
@@ -25,7 +18,7 @@ public interface WeatherApi {
             .baseUrl(baseUrl)
             .addConverterFactory(GsonConverterFactory.create())
             .build();
-    //"weather?id=3031009&APPID="
+
     @GET("weather")
-    Call<String> getWeather(@Query("id") int cityId, @Query("APPID") String appId);
+    Call<WeatherObject> getWeatherObject(@Query("id") int cityId, @Query("APPID") String appId);
 }

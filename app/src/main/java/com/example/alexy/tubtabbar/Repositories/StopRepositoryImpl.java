@@ -1,14 +1,10 @@
 package com.example.alexy.tubtabbar.Repositories;
 
-import android.util.Log;
-
 import com.example.alexy.tubtabbar.Entities.Hour;
 import com.example.alexy.tubtabbar.Entities.Stop;
 import com.example.alexy.tubtabbar.Entities.Stop_Table;
 import com.raizlabs.android.dbflow.sql.language.SQLite;
 
-import java.io.IOException;
-import java.sql.SQLDataException;
 import java.util.ArrayList;
 import java.util.List;
 

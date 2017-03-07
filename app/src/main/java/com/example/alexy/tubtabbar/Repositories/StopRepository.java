@@ -1,7 +1,6 @@
 package com.example.alexy.tubtabbar.Repositories;
 
 import com.example.alexy.tubtabbar.Entities.Stop;
-import com.google.android.gms.maps.model.LatLng;
 
 import java.util.List;
 
