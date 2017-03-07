@@ -29,6 +29,7 @@ public class LineFragment extends Fragment {
 
     private View retVal = null;
     private ListView listLine;
+    public ListAdapter adapter;
     public LineFragment() {
     }
 
@@ -46,10 +47,20 @@ public class LineFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        LineRepository lineRepository = new LineRepositoryImpl();
 
         retVal = inflater.inflate(R.layout.fragment_line, container, false);
         listLine = (ListView) retVal.findViewById(R.id.listLigne);
+
+
+        return retVal;
+    }
+
+    @Override
+    public void onResume(){
+        super.onResume();
+
+        LineRepository lineRepository = new LineRepositoryImpl();
+
 
         List <String> listNameLine = new ArrayList<>();
 
@@ -57,8 +68,8 @@ public class LineFragment extends Fragment {
             listNameLine.add(line.getName());
         }
 
-        //Add all the names of the lines in a listView
-        listLine.setAdapter(new ArrayAdapter(getActivity(), android.R.layout.simple_list_item_1, listNameLine));
+        adapter = new ArrayAdapter(getActivity(), android.R.layout.simple_list_item_1, listNameLine);
+        listLine.setAdapter(adapter);
 
         //return the name of the selected line
         listLine.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -67,7 +78,7 @@ public class LineFragment extends Fragment {
                 showLigneHorraire( (String) listLine.getItemAtPosition(i));
             }
         });
-        return retVal;
+
     }
 
     private void showLigneHorraire(String nameLine){
