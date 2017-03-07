@@ -6,7 +6,8 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_select_stops">selectStops</string>
     <string name="weather_key">05ee44e4da7dd0c50cd8790f1c8273ad</string>
-        <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+    <string name="city_id">3031009</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
     AIzaSyBmmESMTH4ARGYRlGu8cQR1w7Ikwji8HjE
 </string>
 

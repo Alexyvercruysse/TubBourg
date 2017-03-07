@@ -67,27 +67,20 @@ public class MenuFragment extends Fragment {
         if (ni != null && ni.isConnectedOrConnecting()) {
             Log.i("MenuFragment", "Network " + ni.getTypeName() + " connected");
             WeatherApi api = WeatherApi.retrofit.create(WeatherApi.class);
-            Call weather = api.getWeatherObject(3031009,getResources().getString(R.string.weather_key));
-            Log.d("HTTPGEt", api.getWeatherObject(3031009,getResources().getString(R.string.weather_key)).request().url().toString());
+            Call weather = api.getWeatherObject(getResources().getString(R.string.city_id),getResources().getString(R.string.weather_key));
             weather.enqueue(new Callback<WeatherObject>() {
                 @Override
                 public void onResponse(Call<WeatherObject> call, Response<WeatherObject> response) {
-                    if (response.body() == null) {
-
-                    }
-                    else {
                         resultWeather.setText(response.body().getName() + " actuellement : " + response.body().getMain().getTemp() + "°C");
-                        Log.d("MenuFragment", "hey response" + " " + response.body().getWeather().get(0).getIcon());
                         imageViewWeather.setVisibility(View.VISIBLE);
                         Picasso.with(getActivity())
                                 .load("http://openweathermap.org/img/w/" + response.body().getWeather().get(0).getIcon() + ".png")
                                 .into(imageViewWeather);
-                    }
                 }
 
                 @Override
                 public void onFailure(Call<WeatherObject> call, Throwable t) {
-                    Log.d("MenuFragment","hey nope response"+t.getMessage());
+                    resultWeather.setText("Erreur lors de la récupération de la météo");
                 }
             });
         }

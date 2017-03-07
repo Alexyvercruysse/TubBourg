@@ -77,7 +77,7 @@ public class LineMap extends AppCompatActivity {
                 } catch (IOException e) {
                     throw new RuntimeException(e.getMessage());
                 } catch (NoSuchFieldException e) {
-                    throw new RuntimeException(e.getMessage());
+                   // throw new RuntimeException(e.getMessage()); FIXME : BDD VIDE
                 } catch (IllegalAccessException e) {
                     throw new RuntimeException(e.getMessage());
                 }

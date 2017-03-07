@@ -20,5 +20,5 @@ public interface WeatherApi {
             .build();
 
     @GET("weather")
-    Call<WeatherObject> getWeatherObject(@Query("id") int cityId, @Query("APPID") String appId);
+    Call<WeatherObject> getWeatherObject(@Query("id") String cityId, @Query("APPID") String appId);
 }
